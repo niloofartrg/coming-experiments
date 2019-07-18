@@ -1,0 +1,488 @@
+{
+  "instances": [
+    {
+      "revision": "8d94514f4d888b7b4e8abd0d77b974a0c8e3baad",
+      "repairability": [
+        {
+          "tool-name": "JMutRepair",
+          "pattern-name": "JMutRepair:binary_1",
+          "instance_detail": [
+            {
+              "pattern_action": "UPD",
+              "pattern_entity": {
+                "entity_type": "BinaryOperator",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "BinaryOperator",
+                "dst_type": "BinaryOperator",
+                "src": "(cs.charAt(i)) \u003d\u003d searchChar",
+                "dst": "(cs.charAt(i)) !\u003d searchChar",
+                "src_parent_type": "If",
+                "dst_parent_type": "If",
+                "src_parent": "if ((cs.charAt(i)) \u003d\u003d searchChar) {\n    return i;\n}",
+                "dst_parent": "if ((cs.charAt(i)) !\u003d searchChar) {\n    return i;\n}"
+              },
+              "line": 80,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/src/CharSequenceUtils.java"
+            }
+          ]
+        },
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_upd_shallow",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "condition",
+                "entity_parent": {
+                  "entity_type": "If",
+                  "entity_new value": "*",
+                  "entity_role": "*",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "BinaryOperator",
+                "dst_type": "BinaryOperator",
+                "src": "(cs.charAt(i)) \u003d\u003d searchChar",
+                "dst": "(cs.charAt(i)) !\u003d searchChar",
+                "src_parent_type": "If",
+                "dst_parent_type": "If",
+                "src_parent": "if ((cs.charAt(i)) \u003d\u003d searchChar) {\n    return i;\n}",
+                "dst_parent": "if ((cs.charAt(i)) !\u003d searchChar) {\n    return i;\n}"
+              },
+              "line": 80,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/src/CharSequenceUtils.java"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "8c0e7110c9ebc3ba5158e8de0f73c80ec69e1001",
+      "repairability": [
+        {
+          "tool-name": "JMutRepair",
+          "pattern-name": "JMutRepair:binary_1",
+          "instance_detail": [
+            {
+              "pattern_action": "UPD",
+              "pattern_entity": {
+                "entity_type": "BinaryOperator",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "BinaryOperator",
+                "dst_type": "BinaryOperator",
+                "src": "sz - 1",
+                "dst": "sz + 1",
+                "src_parent_type": "Assignment",
+                "dst_parent_type": "Assignment",
+                "src_parent": "start \u003d sz - 1",
+                "dst_parent": "start \u003d sz + 1"
+              },
+              "line": 127,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/src/CharSequenceUtils.java"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "646b3ad20d94d2b63335d1ae4c98980be274d703",
+      "repairability": [
+        {
+          "tool-name": "JMutRepair",
+          "pattern-name": "JMutRepair:unary",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "UnaryOperator",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "UnaryOperator",
+                "dst_type": "UnaryOperator",
+                "src": "(index2++)",
+                "dst": "(index2--)",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "Invocation",
+                "src_parent": "substring.charAt((index2++))",
+                "dst_parent": "substring.charAt((index2--))"
+              },
+              "line": 198,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/src/CharSequenceUtils.java"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "01dd29c37f6044d9d1126d9db55a961cccaccfb7",
+      "repairability": [
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "java.lang.System.out.println(\"Not found: \")",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (cs instanceof java.lang.String) {\n        return ((java.lang.String) (cs)).lastIndexOf(searchChar, start);\n    }\n    final int sz \u003d cs.length();\n    if (start \u003c 0) {\n        return org.apache.commons.lang3.CharSequenceUtils.NOT_FOUND;\n    }\n    if (start \u003e\u003d sz) {\n        start \u003d sz + 1;\n    }\n    for (int i \u003d start; i \u003e\u003d 0; --i) {\n        if ((cs.charAt(i)) \u003d\u003d searchChar) {\n            return i;\n        }\n    }\n    java.lang.System.out.println(\"Not found: \");\n    return org.apache.commons.lang3.CharSequenceUtils.NOT_FOUND;\n}",
+                "dst_parent": "null"
+              },
+              "line": 134,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/CharSequenceUtils.java"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "FieldRead",
+                "dst_type": "null",
+                "src": "java.lang.System.out",
+                "dst": "null",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "null",
+                "src_parent": "java.lang.System.out.println(\"Not found: \")",
+                "dst_parent": "null"
+              },
+              "line": 134,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/CharSequenceUtils.java"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Literal",
+                "dst_type": "null",
+                "src": "\"Not found: \"",
+                "dst": "null",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "null",
+                "src_parent": "java.lang.System.out.println(\"Not found: \")",
+                "dst_parent": "null"
+              },
+              "line": 134,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/CharSequenceUtils.java"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "TypeAccess",
+                "dst_type": "null",
+                "src": "java.lang.System",
+                "dst": "null",
+                "src_parent_type": "FieldRead",
+                "dst_parent_type": "null",
+                "src_parent": "java.lang.System.out",
+                "dst_parent": "null"
+              },
+              "line": 134,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/CharSequenceUtils.java"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "6dac8ae81bd03bcae1e1fade064d3bb03de472c0",
+      "repairability": [
+        {
+          "tool-name": "JMutRepair",
+          "pattern-name": "JMutRepair:binary_1",
+          "instance_detail": [
+            {
+              "pattern_action": "UPD",
+              "pattern_entity": {
+                "entity_type": "BinaryOperator",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "BinaryOperator",
+                "dst_type": "BinaryOperator",
+                "src": "i \u003c sz",
+                "dst": "i \u003c\u003d sz",
+                "src_parent_type": "For",
+                "dst_parent_type": "For",
+                "src_parent": "for (int i \u003d 0; i \u003c sz; i++) {\n    array[i] \u003d cs.charAt((i + (sz + 1)));\n}",
+                "dst_parent": "for (int i \u003d 0; i \u003c\u003d sz; i++) {\n    array[i] \u003d cs.charAt((i + (sz + 1)));\n}"
+              },
+              "line": 171,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/src/CharSequenceUtils.java"
+            }
+          ]
+        },
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_upd_shallow",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "condition",
+                "entity_parent": {
+                  "entity_type": "If",
+                  "entity_new value": "*",
+                  "entity_role": "*",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "BinaryOperator",
+                "dst_type": "BinaryOperator",
+                "src": "c1 \u003d\u003d c2",
+                "dst": "c1 !\u003d c2",
+                "src_parent_type": "If",
+                "dst_parent_type": "If",
+                "src_parent": "if (c1 \u003d\u003d c2) {\n    continue;\n}",
+                "dst_parent": "if (c1 !\u003d c2) {\n    continue;\n}"
+              },
+              "line": 201,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/src/CharSequenceUtils.java"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "fe76517014e580ddcb40ac04ea824d54ba741c8b",
+      "repairability": [
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_ins_deep",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (c \u003e 0)\n    result \u003d (31 * result) + c;\n",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    final int c \u003d org.apache.commons.math3.util.MathUtils.hash(comp);\n    if (c \u003e 0)\n        result \u003d (31 * result) + c;\n\n}",
+                "dst_parent": "null"
+              },
+              "line": 291,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Quaternion.java"
+            },
+            {
+              "pattern_action": "MOV",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Then",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "MOV",
+                "src_type": "Assignment",
+                "dst_type": "Assignment",
+                "src": "result \u003d (31 * result) + c",
+                "dst": "result \u003d (31 * result) + c",
+                "src_parent_type": "Block",
+                "dst_parent_type": "Block",
+                "src_parent": "{\n    final int c \u003d org.apache.commons.math3.util.MathUtils.hash(comp);\n    result \u003d (31 * result) + c;\n}",
+                "dst_parent": "result \u003d (31 * result) + c;\n"
+              },
+              "line": 291,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/src/Quaternion.java"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement4",
+          "instance_detail": [
+            {
+              "pattern_action": "MOV",
+              "pattern_entity": {
+                "entity_type": "Assignment",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "MOV",
+                "src_type": "Assignment",
+                "dst_type": "Assignment",
+                "src": "result \u003d (31 * result) + c",
+                "dst": "result \u003d (31 * result) + c",
+                "src_parent_type": "Block",
+                "dst_parent_type": "Block",
+                "src_parent": "{\n    final int c \u003d org.apache.commons.math3.util.MathUtils.hash(comp);\n    result \u003d (31 * result) + c;\n}",
+                "dst_parent": "result \u003d (31 * result) + c;\n"
+              },
+              "line": 291,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/src/Quaternion.java"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "c6b1cd8204b10c324b92cdc3e44fe3ab6cfb1f5e",
+      "repairability": [
+        {
+          "tool-name": "JKali",
+          "pattern-name": "JKali:add_rtrn",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Return",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return null",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    java.lang.System.out.println(z);\n    return null;\n}",
+                "dst_parent": "null"
+              },
+              "line": 144,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Quaternion.java"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement3",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Return",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return null",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    java.lang.System.out.println(z);\n    return null;\n}",
+                "dst_parent": "null"
+              },
+              "line": 144,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Quaternion.java"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
