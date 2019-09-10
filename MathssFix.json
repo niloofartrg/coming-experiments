@@ -1,0 +1,99 @@
+{
+  "instances": [
+    {
+      "revision": "Math50",
+      "repairability": [
+        {
+          "tool-name": "JKali",
+          "pattern-name": "JKali:del",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "DELETE:": "                        x0 \u003d 0.5 * (x0 + x1 - FastMath.max(rtol * FastMath.abs(x1), atol));",
+          "instance_detail": [
+            {
+              "pattern_action": "DEL",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "Assignment",
+                "dst_type": "null",
+                "src": "x0 \u003d 0.5 * ((x0 + x1) - (org.apache.commons.math.util.FastMath.max((rtol * (org.apache.commons.math.util.FastMath.abs(x1))), atol)))",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    x0 \u003d 0.5 * ((x0 + x1) - (org.apache.commons.math.util.FastMath.max((rtol * (org.apache.commons.math.util.FastMath.abs(x1))), atol)));\n    f0 \u003d computeObjectiveValue(x0);\n}",
+                "dst_parent": "null"
+              },
+              "line": 188,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math50"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "DELETE:": "                        x0 \u003d 0.5 * (x0 + x1 - FastMath.max(rtol * FastMath.abs(x1), atol));",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "Assignment",
+                "dst_type": "null",
+                "src": "x0 \u003d 0.5 * ((x0 + x1) - (org.apache.commons.math.util.FastMath.max((rtol * (org.apache.commons.math.util.FastMath.abs(x1))), atol)))",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    x0 \u003d 0.5 * ((x0 + x1) - (org.apache.commons.math.util.FastMath.max((rtol * (org.apache.commons.math.util.FastMath.abs(x1))), atol)));\n    f0 \u003d computeObjectiveValue(x0);\n}",
+                "dst_parent": "null"
+              },
+              "line": 188,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math50"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "DELETE:": "                        x0 \u003d 0.5 * (x0 + x1 - FastMath.max(rtol * FastMath.abs(x1), atol));",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "Assignment",
+                "dst_type": "null",
+                "src": "x0 \u003d 0.5 * ((x0 + x1) - (org.apache.commons.math.util.FastMath.max((rtol * (org.apache.commons.math.util.FastMath.abs(x1))), atol)))",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    x0 \u003d 0.5 * ((x0 + x1) - (org.apache.commons.math.util.FastMath.max((rtol * (org.apache.commons.math.util.FastMath.abs(x1))), atol)));\n    f0 \u003d computeObjectiveValue(x0);\n}",
+                "dst_parent": "null"
+              },
+              "line": 188,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math50"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

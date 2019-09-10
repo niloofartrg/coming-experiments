@@ -1,0 +1,263 @@
+{
+  "instances": [
+    {
+      "revision": "Time15",
+      "repairability": [
+        {
+          "tool-name": "JMutRepair",
+          "pattern-name": "JMutRepair:unary",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "          throw new ArithmeticException(\"Multiplication overflows a long: \" + val1 + \" * \" + val2);",
+          "CHANGE_new:": "              throw new ArithmeticException(\"Multiplication overflows a long: \" + val1 + \" * \"+ val2);",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "UnaryOperator",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "UnaryOperator",
+                "dst_type": "null",
+                "src": "(-1)",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(val1 \u003d\u003d (-1))",
+                "dst_parent": "null"
+              },
+              "line": 145,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Time15"
+            }
+          ]
+        },
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_upd_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "          throw new ArithmeticException(\"Multiplication overflows a long: \" + val1 + \" * \" + val2);",
+          "CHANGE_new:": "              throw new ArithmeticException(\"Multiplication overflows a long: \" + val1 + \" * \"+ val2);",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "condition",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "BinaryOperator",
+                "dst_type": "null",
+                "src": "(((total / val2) !\u003d val1) || ((val1 \u003d\u003d (java.lang.Long.MIN_VALUE)) \u0026\u0026 (val2 \u003d\u003d (-1))))",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(((total / val2) !\u003d val1) || ((val1 \u003d\u003d (java.lang.Long.MIN_VALUE)) \u0026\u0026 (val2 \u003d\u003d (-1)))) || ((val2 \u003d\u003d (java.lang.Long.MIN_VALUE)) \u0026\u0026 (val1 \u003d\u003d (-1)))",
+                "dst_parent": "null"
+              },
+              "line": 145,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Time15"
+            }
+          ]
+        },
+        {
+          "tool-name": "JKali",
+          "pattern-name": "JKali:del",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "          throw new ArithmeticException(\"Multiplication overflows a long: \" + val1 + \" * \" + val2);",
+          "CHANGE_new:": "              throw new ArithmeticException(\"Multiplication overflows a long: \" + val1 + \" * \"+ val2);",
+          "instance_detail": [
+            {
+              "pattern_action": "DEL",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return -val1",
+                "dst": "null",
+                "src_parent_type": "Case",
+                "dst_parent_type": "null",
+                "src_parent": "case -1 :\n    return -val1;",
+                "dst_parent": "null"
+              },
+              "line": 138,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Time15"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "          throw new ArithmeticException(\"Multiplication overflows a long: \" + val1 + \" * \" + val2);",
+          "CHANGE_new:": "              throw new ArithmeticException(\"Multiplication overflows a long: \" + val1 + \" * \"+ val2);",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return -val1",
+                "dst": "null",
+                "src_parent_type": "Case",
+                "dst_parent_type": "null",
+                "src_parent": "case -1 :\n    return -val1;",
+                "dst_parent": "null"
+              },
+              "line": 138,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Time15"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement6",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "          throw new ArithmeticException(\"Multiplication overflows a long: \" + val1 + \" * \" + val2);",
+          "CHANGE_new:": "              throw new ArithmeticException(\"Multiplication overflows a long: \" + val1 + \" * \"+ val2);",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "FieldRead",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "FieldRead",
+                "dst_type": "null",
+                "src": "(java.lang.Long.MIN_VALUE)",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(val2 \u003d\u003d (java.lang.Long.MIN_VALUE))",
+                "dst_parent": "null"
+              },
+              "line": 145,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Time15"
+            },
+            {
+              "pattern_action": "DEL",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "VariableRead",
+                "dst_type": "null",
+                "src": "val1",
+                "dst": "null",
+                "src_parent_type": "UnaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "-val1",
+                "dst_parent": "null"
+              },
+              "line": 138,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Time15"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "          throw new ArithmeticException(\"Multiplication overflows a long: \" + val1 + \" * \" + val2);",
+          "CHANGE_new:": "              throw new ArithmeticException(\"Multiplication overflows a long: \" + val1 + \" * \"+ val2);",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return -val1",
+                "dst": "null",
+                "src_parent_type": "Case",
+                "dst_parent_type": "null",
+                "src_parent": "case -1 :\n    return -val1;",
+                "dst_parent": "null"
+              },
+              "line": 138,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Time15"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:tight_be",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "          throw new ArithmeticException(\"Multiplication overflows a long: \" + val1 + \" * \" + val2);",
+          "CHANGE_new:": "              throw new ArithmeticException(\"Multiplication overflows a long: \" + val1 + \" * \"+ val2);",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "BinaryOperator",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "If",
+                  "entity_new value": "*",
+                  "entity_role": "*",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "BinaryOperator",
+                "dst_type": "null",
+                "src": "(((total / val2) !\u003d val1) || ((val1 \u003d\u003d (java.lang.Long.MIN_VALUE)) \u0026\u0026 (val2 \u003d\u003d (-1)))) || ((val2 \u003d\u003d (java.lang.Long.MIN_VALUE)) \u0026\u0026 (val1 \u003d\u003d (-1)))",
+                "dst": "null",
+                "src_parent_type": "If",
+                "dst_parent_type": "null",
+                "src_parent": "if ((((total / val2) !\u003d val1) || ((val1 \u003d\u003d (java.lang.Long.MIN_VALUE)) \u0026\u0026 (val2 \u003d\u003d (-1)))) || ((val2 \u003d\u003d (java.lang.Long.MIN_VALUE)) \u0026\u0026 (val1 \u003d\u003d (-1)))) {\n    throw new java.lang.ArithmeticException((((\"Multiplication overflows a long: \" + val1) + \" * \") + val2));\n}",
+                "dst_parent": "null"
+              },
+              "line": 145,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Time15"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

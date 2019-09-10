@@ -1,0 +1,194 @@
+{
+  "instances": [
+    {
+      "revision": "Math5",
+      "repairability": [
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return NaN;",
+          "CHANGE_new:": "            return Complex.INF;",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "FieldRead",
+                "dst_type": "FieldRead",
+                "src": "org.apache.commons.math3.complex.Complex.NaN",
+                "dst": "org.apache.commons.math3.complex.Complex.INF",
+                "src_parent_type": "Return",
+                "dst_parent_type": "Return",
+                "src_parent": "return org.apache.commons.math3.complex.Complex.NaN",
+                "dst_parent": "return org.apache.commons.math3.complex.Complex.INF"
+              },
+              "line": 305,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Math82",
+      "repairability": [
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_upd_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            if (MathUtils.compareTo(entry, 0, epsilon) \u0026gt;\u003d 0) {",
+          "CHANGE_new:": "            if((MathUtils.compareTo(entry,0,epsilon))\u0026gt;\u003d1){",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "condition",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "Literal",
+                "dst_type": "Literal",
+                "src": "0",
+                "dst": "1",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "BinaryOperator",
+                "src_parent": "(org.apache.commons.math.util.MathUtils.compareTo(entry, 0, epsilon)) \u003e\u003d 0",
+                "dst_parent": "(org.apache.commons.math.util.MathUtils.compareTo(entry, 0, epsilon)) \u003e\u003d 1"
+              },
+              "line": 82,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math82"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            if (MathUtils.compareTo(entry, 0, epsilon) \u0026gt;\u003d 0) {",
+          "CHANGE_new:": "            if((MathUtils.compareTo(entry,0,epsilon))\u0026gt;\u003d1){",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "Literal",
+                "dst_type": "Literal",
+                "src": "0",
+                "dst": "1",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "BinaryOperator",
+                "src_parent": "(org.apache.commons.math.util.MathUtils.compareTo(entry, 0, epsilon)) \u003e\u003d 0",
+                "dst_parent": "(org.apache.commons.math.util.MathUtils.compareTo(entry, 0, epsilon)) \u003e\u003d 1"
+              },
+              "line": 82,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math82"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement11",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            if (MathUtils.compareTo(entry, 0, epsilon) \u0026gt;\u003d 0) {",
+          "CHANGE_new:": "            if((MathUtils.compareTo(entry,0,epsilon))\u0026gt;\u003d1){",
+          "instance_detail": [
+            {
+              "pattern_action": "UPD",
+              "pattern_entity": {
+                "entity_type": "Literal",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "Literal",
+                "dst_type": "Literal",
+                "src": "0",
+                "dst": "1",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "BinaryOperator",
+                "src_parent": "(org.apache.commons.math.util.MathUtils.compareTo(entry, 0, epsilon)) \u003e\u003d 0",
+                "dst_parent": "(org.apache.commons.math.util.MathUtils.compareTo(entry, 0, epsilon)) \u003e\u003d 1"
+              },
+              "line": 82,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math82"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            if (MathUtils.compareTo(entry, 0, epsilon) \u0026gt;\u003d 0) {",
+          "CHANGE_new:": "            if((MathUtils.compareTo(entry,0,epsilon))\u0026gt;\u003d1){",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "Literal",
+                "dst_type": "Literal",
+                "src": "0",
+                "dst": "1",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "BinaryOperator",
+                "src_parent": "(org.apache.commons.math.util.MathUtils.compareTo(entry, 0, epsilon)) \u003e\u003d 0",
+                "dst_parent": "(org.apache.commons.math.util.MathUtils.compareTo(entry, 0, epsilon)) \u003e\u003d 1"
+              },
+              "line": 82,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math82"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "instances": [
+    {
+      "revision": "Closure115",
+      "repairability": [
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_upd_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "          if (hasSideEffects \u0026\u0026 NodeUtil.canBeSideEffected(cArg)) {",
+          "CHANGE_new:": "          if (cArg\u003d\u003dnull \u0026\u0026 NodeUtil.canBeSideEffected(cArg)) {\r",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "condition",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "BinaryOperator",
+                "dst_type": "null",
+                "src": "(cArg \u003d\u003d null)",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(cArg \u003d\u003d null) \u0026\u0026 (com.google.javascript.jscomp.NodeUtil.canBeSideEffected(cArg))",
+                "dst_parent": "null"
+              },
+              "line": 730,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure115"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "          if (hasSideEffects \u0026\u0026 NodeUtil.canBeSideEffected(cArg)) {",
+          "CHANGE_new:": "          if (cArg\u003d\u003dnull \u0026\u0026 NodeUtil.canBeSideEffected(cArg)) {\r",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "BinaryOperator",
+                "dst_type": "null",
+                "src": "(cArg \u003d\u003d null)",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(cArg \u003d\u003d null) \u0026\u0026 (com.google.javascript.jscomp.NodeUtil.canBeSideEffected(cArg))",
+                "dst_parent": "null"
+              },
+              "line": 730,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure115"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement5",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "          if (hasSideEffects \u0026\u0026 NodeUtil.canBeSideEffected(cArg)) {",
+          "CHANGE_new:": "          if (cArg\u003d\u003dnull \u0026\u0026 NodeUtil.canBeSideEffected(cArg)) {\r",
+          "instance_detail": [
+            {
+              "pattern_action": "UPD",
+              "pattern_entity": {
+                "entity_type": "VariableRead",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "VariableRead",
+                "dst_type": "VariableRead",
+                "src": "hasSideEffects",
+                "dst": "cArg",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "BinaryOperator",
+                "src_parent": "hasSideEffects \u0026\u0026 (com.google.javascript.jscomp.NodeUtil.canBeSideEffected(cArg))",
+                "dst_parent": "(cArg \u003d\u003d null)"
+              },
+              "line": 730,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure115"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "          if (hasSideEffects \u0026\u0026 NodeUtil.canBeSideEffected(cArg)) {",
+          "CHANGE_new:": "          if (cArg\u003d\u003dnull \u0026\u0026 NodeUtil.canBeSideEffected(cArg)) {\r",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "BinaryOperator",
+                "dst_type": "null",
+                "src": "(cArg \u003d\u003d null)",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(cArg \u003d\u003d null) \u0026\u0026 (com.google.javascript.jscomp.NodeUtil.canBeSideEffected(cArg))",
+                "dst_parent": "null"
+              },
+              "line": 730,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure115"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:update_return",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "          if (hasSideEffects \u0026\u0026 NodeUtil.canBeSideEffected(cArg)) {",
+          "CHANGE_new:": "          if (cArg\u003d\u003dnull \u0026\u0026 NodeUtil.canBeSideEffected(cArg)) {\r",
+          "instance_detail": [
+            {
+              "pattern_action": "UPD",
+              "pattern_entity": {
+                "entity_type": "VariableRead",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "VariableRead",
+                "dst_type": "VariableRead",
+                "src": "hasSideEffects",
+                "dst": "cArg",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "BinaryOperator",
+                "src_parent": "hasSideEffects \u0026\u0026 (com.google.javascript.jscomp.NodeUtil.canBeSideEffected(cArg))",
+                "dst_parent": "(cArg \u003d\u003d null)"
+              },
+              "line": 730,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure115"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

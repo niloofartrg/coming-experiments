@@ -1,0 +1,348 @@
+{
+  "instances": [
+    {
+      "revision": "Lang44",
+      "repairability": [
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_ins_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                    }",
+          "instance_detail": [
+            {
+              "pattern_action": "MOV",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Then",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "MOV",
+                "src_type": "If",
+                "dst_type": "If",
+                "src": "if (((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 ((((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) \u0026\u0026 (org.apache.commons.lang.NumberUtils.isDigits(numeric.substring(1)))) || (org.apache.commons.lang.NumberUtils.isDigits(numeric)))) {\n    try {\n        return org.apache.commons.lang.NumberUtils.createLong(numeric);\n    } catch (java.lang.NumberFormatException nfe) {\n    }\n    return org.apache.commons.lang.NumberUtils.createBigInteger(numeric);\n}",
+                "dst": "if (((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 ((((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) \u0026\u0026 (org.apache.commons.lang.NumberUtils.isDigits(numeric.substring(1)))) || (org.apache.commons.lang.NumberUtils.isDigits(numeric)))) {\n    try {\n        return org.apache.commons.lang.NumberUtils.createLong(numeric);\n    } catch (java.lang.NumberFormatException nfe) {\n    }\n    return org.apache.commons.lang.NumberUtils.createBigInteger(numeric);\n}",
+                "src_parent_type": "Case",
+                "dst_parent_type": "Block",
+                "src_parent": "case \u0027L\u0027 :\n    if (((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 ((((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) \u0026\u0026 (org.apache.commons.lang.NumberUtils.isDigits(numeric.substring(1)))) || (org.apache.commons.lang.NumberUtils.isDigits(numeric)))) {\n        try {\n            return org.apache.commons.lang.NumberUtils.createLong(numeric);\n        } catch (java.lang.NumberFormatException nfe) {\n        }\n        return org.apache.commons.lang.NumberUtils.createBigInteger(numeric);\n    }\n    throw new java.lang.NumberFormatException((val + \" is not a valid number.\"));",
+                "dst_parent": "{\n    if (((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 ((((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) \u0026\u0026 (org.apache.commons.lang.NumberUtils.isDigits(numeric.substring(1)))) || (org.apache.commons.lang.NumberUtils.isDigits(numeric)))) {\n        try {\n            return org.apache.commons.lang.NumberUtils.createLong(numeric);\n        } catch (java.lang.NumberFormatException nfe) {\n        }\n        return org.apache.commons.lang.NumberUtils.createBigInteger(numeric);\n    }\n    throw new java.lang.NumberFormatException((val + \" is not a valid number.\"));\n}"
+              },
+              "line": 193,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang44"
+            },
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((val.length()) !\u003d 1) {\n    if (((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 ((((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) \u0026\u0026 (org.apache.commons.lang.NumberUtils.isDigits(numeric.substring(1)))) || (org.apache.commons.lang.NumberUtils.isDigits(numeric)))) {\n        try {\n            return org.apache.commons.lang.NumberUtils.createLong(numeric);\n        } catch (java.lang.NumberFormatException nfe) {\n        }\n        return org.apache.commons.lang.NumberUtils.createBigInteger(numeric);\n    }\n    throw new java.lang.NumberFormatException((val + \" is not a valid number.\"));\n}",
+                "dst": "null",
+                "src_parent_type": "Case",
+                "dst_parent_type": "null",
+                "src_parent": "case \u0027L\u0027 :\n    if ((val.length()) !\u003d 1) {\n        if (((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 ((((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) \u0026\u0026 (org.apache.commons.lang.NumberUtils.isDigits(numeric.substring(1)))) || (org.apache.commons.lang.NumberUtils.isDigits(numeric)))) {\n            try {\n                return org.apache.commons.lang.NumberUtils.createLong(numeric);\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            return org.apache.commons.lang.NumberUtils.createBigInteger(numeric);\n        }\n        throw new java.lang.NumberFormatException((val + \" is not a valid number.\"));\n    }",
+                "dst_parent": "null"
+              },
+              "line": 193,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang44"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                    }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((val.length()) !\u003d 1) {\n    if (((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 ((((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) \u0026\u0026 (org.apache.commons.lang.NumberUtils.isDigits(numeric.substring(1)))) || (org.apache.commons.lang.NumberUtils.isDigits(numeric)))) {\n        try {\n            return org.apache.commons.lang.NumberUtils.createLong(numeric);\n        } catch (java.lang.NumberFormatException nfe) {\n        }\n        return org.apache.commons.lang.NumberUtils.createBigInteger(numeric);\n    }\n    throw new java.lang.NumberFormatException((val + \" is not a valid number.\"));\n}",
+                "dst": "null",
+                "src_parent_type": "Case",
+                "dst_parent_type": "null",
+                "src_parent": "case \u0027L\u0027 :\n    if ((val.length()) !\u003d 1) {\n        if (((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 ((((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) \u0026\u0026 (org.apache.commons.lang.NumberUtils.isDigits(numeric.substring(1)))) || (org.apache.commons.lang.NumberUtils.isDigits(numeric)))) {\n            try {\n                return org.apache.commons.lang.NumberUtils.createLong(numeric);\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            return org.apache.commons.lang.NumberUtils.createBigInteger(numeric);\n        }\n        throw new java.lang.NumberFormatException((val + \" is not a valid number.\"));\n    }",
+                "dst_parent": "null"
+              },
+              "line": 193,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang44"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                    }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((val.length()) !\u003d 1) {\n    if (((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 ((((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) \u0026\u0026 (org.apache.commons.lang.NumberUtils.isDigits(numeric.substring(1)))) || (org.apache.commons.lang.NumberUtils.isDigits(numeric)))) {\n        try {\n            return org.apache.commons.lang.NumberUtils.createLong(numeric);\n        } catch (java.lang.NumberFormatException nfe) {\n        }\n        return org.apache.commons.lang.NumberUtils.createBigInteger(numeric);\n    }\n    throw new java.lang.NumberFormatException((val + \" is not a valid number.\"));\n}",
+                "dst": "null",
+                "src_parent_type": "Case",
+                "dst_parent_type": "null",
+                "src_parent": "case \u0027L\u0027 :\n    if ((val.length()) !\u003d 1) {\n        if (((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 ((((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) \u0026\u0026 (org.apache.commons.lang.NumberUtils.isDigits(numeric.substring(1)))) || (org.apache.commons.lang.NumberUtils.isDigits(numeric)))) {\n            try {\n                return org.apache.commons.lang.NumberUtils.createLong(numeric);\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            return org.apache.commons.lang.NumberUtils.createBigInteger(numeric);\n        }\n        throw new java.lang.NumberFormatException((val + \" is not a valid number.\"));\n    }",
+                "dst_parent": "null"
+              },
+              "line": 193,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang44"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:Insert_Invocation",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                    }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Invocation",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "(val.length())",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(val.length()) !\u003d 1",
+                "dst_parent": "null"
+              },
+              "line": 193,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Lang58",
+      "repairability": [
+        {
+          "tool-name": "JMutRepair",
+          "pattern-name": "JMutRepair:unary",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                    }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "UnaryOperator",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "UnaryOperator",
+                "dst_type": "null",
+                "src": "(-1)",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(-1) \u003c expPos",
+                "dst_parent": "null"
+              },
+              "line": 464,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang58"
+            }
+          ]
+        },
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_ins_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                    }",
+          "instance_detail": [
+            {
+              "pattern_action": "MOV",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Then",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "MOV",
+                "src_type": "Throw",
+                "dst_type": "Throw",
+                "src": "throw new java.lang.NumberFormatException((str + \" is not a valid number.\"))",
+                "dst": "throw new java.lang.NumberFormatException((str + \" is not a valid number.\"))",
+                "src_parent_type": "Case",
+                "dst_parent_type": "Block",
+                "src_parent": "case \u0027L\u0027 :\n    if ((((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 (org.apache.commons.lang.math.NumberUtils.isDigits(numeric.substring(1)))) \u0026\u0026 (((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) || (java.lang.Character.isDigit(numeric.charAt(0))))) {\n        try {\n            return org.apache.commons.lang.math.NumberUtils.createLong(numeric);\n        } catch (java.lang.NumberFormatException nfe) {\n        }\n        return org.apache.commons.lang.math.NumberUtils.createBigInteger(numeric);\n    }\n    throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));",
+                "dst_parent": "{\n    throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n}"
+              },
+              "line": 464,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang58"
+            },
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((-1) \u003c expPos) {\n    throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n}",
+                "dst": "null",
+                "src_parent_type": "Case",
+                "dst_parent_type": "null",
+                "src_parent": "case \u0027L\u0027 :\n    if ((((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 (org.apache.commons.lang.math.NumberUtils.isDigits(numeric.substring(1)))) \u0026\u0026 (((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) || (java.lang.Character.isDigit(numeric.charAt(0))))) {\n        try {\n            return org.apache.commons.lang.math.NumberUtils.createLong(numeric);\n        } catch (java.lang.NumberFormatException nfe) {\n        }\n        return org.apache.commons.lang.math.NumberUtils.createBigInteger(numeric);\n    }\n    if ((-1) \u003c expPos) {\n        throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n    }",
+                "dst_parent": "null"
+              },
+              "line": 464,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang58"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                    }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((-1) \u003c expPos) {\n    throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n}",
+                "dst": "null",
+                "src_parent_type": "Case",
+                "dst_parent_type": "null",
+                "src_parent": "case \u0027L\u0027 :\n    if ((((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 (org.apache.commons.lang.math.NumberUtils.isDigits(numeric.substring(1)))) \u0026\u0026 (((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) || (java.lang.Character.isDigit(numeric.charAt(0))))) {\n        try {\n            return org.apache.commons.lang.math.NumberUtils.createLong(numeric);\n        } catch (java.lang.NumberFormatException nfe) {\n        }\n        return org.apache.commons.lang.math.NumberUtils.createBigInteger(numeric);\n    }\n    if ((-1) \u003c expPos) {\n        throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n    }",
+                "dst_parent": "null"
+              },
+              "line": 464,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang58"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                    }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((-1) \u003c expPos) {\n    throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n}",
+                "dst": "null",
+                "src_parent_type": "Case",
+                "dst_parent_type": "null",
+                "src_parent": "case \u0027L\u0027 :\n    if ((((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 (org.apache.commons.lang.math.NumberUtils.isDigits(numeric.substring(1)))) \u0026\u0026 (((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) || (java.lang.Character.isDigit(numeric.charAt(0))))) {\n        try {\n            return org.apache.commons.lang.math.NumberUtils.createLong(numeric);\n        } catch (java.lang.NumberFormatException nfe) {\n        }\n        return org.apache.commons.lang.math.NumberUtils.createBigInteger(numeric);\n    }\n    if ((-1) \u003c expPos) {\n        throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n    }",
+                "dst_parent": "null"
+              },
+              "line": 464,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang58"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:check_length",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                    }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((-1) \u003c expPos) {\n    throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n}",
+                "dst": "null",
+                "src_parent_type": "Case",
+                "dst_parent_type": "null",
+                "src_parent": "case \u0027L\u0027 :\n    if ((((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 (org.apache.commons.lang.math.NumberUtils.isDigits(numeric.substring(1)))) \u0026\u0026 (((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) || (java.lang.Character.isDigit(numeric.charAt(0))))) {\n        try {\n            return org.apache.commons.lang.math.NumberUtils.createLong(numeric);\n        } catch (java.lang.NumberFormatException nfe) {\n        }\n        return org.apache.commons.lang.math.NumberUtils.createBigInteger(numeric);\n    }\n    if ((-1) \u003c expPos) {\n        throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n    }",
+                "dst_parent": "null"
+              },
+              "line": 464,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang58"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

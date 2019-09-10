@@ -1,0 +1,143 @@
+{
+  "instances": [
+    {
+      "revision": "Time7",
+      "repairability": [
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        int defaultYear \u003d chrono.year().get(instantLocal);",
+          "CHANGE_new:": "        int defaultYear \u003d chrono.year().get(instantMillis);\r",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "VariableRead",
+                "dst_type": "VariableRead",
+                "src": "instantLocal",
+                "dst": "instantMillis",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "Invocation",
+                "src_parent": "chrono.year().get(instantLocal)",
+                "dst_parent": "chrono.year().get(instantMillis)"
+              },
+              "line": 710,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Time7"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement5",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        int defaultYear \u003d chrono.year().get(instantLocal);",
+          "CHANGE_new:": "        int defaultYear \u003d chrono.year().get(instantMillis);\r",
+          "instance_detail": [
+            {
+              "pattern_action": "UPD",
+              "pattern_entity": {
+                "entity_type": "VariableRead",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "VariableRead",
+                "dst_type": "VariableRead",
+                "src": "instantLocal",
+                "dst": "instantMillis",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "Invocation",
+                "src_parent": "chrono.year().get(instantLocal)",
+                "dst_parent": "chrono.year().get(instantMillis)"
+              },
+              "line": 710,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Time7"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        int defaultYear \u003d chrono.year().get(instantLocal);",
+          "CHANGE_new:": "        int defaultYear \u003d chrono.year().get(instantMillis);\r",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "VariableRead",
+                "dst_type": "VariableRead",
+                "src": "instantLocal",
+                "dst": "instantMillis",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "Invocation",
+                "src_parent": "chrono.year().get(instantLocal)",
+                "dst_parent": "chrono.year().get(instantMillis)"
+              },
+              "line": 710,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Time7"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:update_return",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        int defaultYear \u003d chrono.year().get(instantLocal);",
+          "CHANGE_new:": "        int defaultYear \u003d chrono.year().get(instantMillis);\r",
+          "instance_detail": [
+            {
+              "pattern_action": "UPD",
+              "pattern_entity": {
+                "entity_type": "VariableRead",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "VariableRead",
+                "dst_type": "VariableRead",
+                "src": "instantLocal",
+                "dst": "instantMillis",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "Invocation",
+                "src_parent": "chrono.year().get(instantLocal)",
+                "dst_parent": "chrono.year().get(instantMillis)"
+              },
+              "line": 710,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Time7"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

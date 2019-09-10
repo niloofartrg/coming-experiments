@@ -1,0 +1,345 @@
+{
+  "instances": [
+    {
+      "revision": "Chart12",
+      "repairability": [
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        setDataset(dataset);",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "setDataset(dataset)",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    super();\n    this.dataset \u003d dataset;\n    org.jfree.chart.plot.PiePlot piePlot \u003d new org.jfree.chart.plot.PiePlot(null);\n    this.pieChart \u003d new org.jfree.chart.JFreeChart(piePlot);\n    this.pieChart.removeLegend();\n    setDataset(dataset);\n    this.dataExtractOrder \u003d org.jfree.chart.util.TableOrder.BY_COLUMN;\n    this.pieChart.setBackgroundPaint(null);\n    org.jfree.chart.title.TextTitle seriesTitle \u003d new org.jfree.chart.title.TextTitle(\"Series Title\", new java.awt.Font(\"SansSerif\", java.awt.Font.BOLD, 12));\n    seriesTitle.setPosition(RectangleEdge.BOTTOM);\n    this.pieChart.setTitle(seriesTitle);\n    this.aggregatedItemsKey \u003d \"Other\";\n    this.aggregatedItemsPaint \u003d java.awt.Color.lightGray;\n    this.sectionPaints \u003d new java.util.HashMap();\n}",
+                "dst_parent": "null"
+              },
+              "line": 149,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart12"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:Insert_Invocation",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        setDataset(dataset);",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Invocation",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "setDataset(dataset)",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    super();\n    this.dataset \u003d dataset;\n    org.jfree.chart.plot.PiePlot piePlot \u003d new org.jfree.chart.plot.PiePlot(null);\n    this.pieChart \u003d new org.jfree.chart.JFreeChart(piePlot);\n    this.pieChart.removeLegend();\n    setDataset(dataset);\n    this.dataExtractOrder \u003d org.jfree.chart.util.TableOrder.BY_COLUMN;\n    this.pieChart.setBackgroundPaint(null);\n    org.jfree.chart.title.TextTitle seriesTitle \u003d new org.jfree.chart.title.TextTitle(\"Series Title\", new java.awt.Font(\"SansSerif\", java.awt.Font.BOLD, 12));\n    seriesTitle.setPosition(RectangleEdge.BOTTOM);\n    this.pieChart.setTitle(seriesTitle);\n    this.aggregatedItemsKey \u003d \"Other\";\n    this.aggregatedItemsPaint \u003d java.awt.Color.lightGray;\n    this.sectionPaints \u003d new java.util.HashMap();\n}",
+                "dst_parent": "null"
+              },
+              "line": 149,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Chart3",
+      "repairability": [
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        findBoundsByIteration();",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "findBoundsByIteration()",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (item \u003d\u003d null) {\n        throw new java.lang.IllegalArgumentException(\"Null \u0027item\u0027 argument.\");\n    }\n    findBoundsByIteration();\n    item \u003d ((org.jfree.data.time.TimeSeriesDataItem) (item.clone()));\n    java.lang.Class c \u003d item.getPeriod().getClass();\n    if ((this.timePeriodClass) \u003d\u003d null) {\n        this.timePeriodClass \u003d c;\n    } else\n        if (!(this.timePeriodClass.equals(c))) {\n            java.lang.StringBuffer b \u003d new java.lang.StringBuffer();\n            b.append(\"You are trying to add data where the time period class \");\n            b.append(\"is \");\n            b.append(item.getPeriod().getClass().getName());\n            b.append(\", but the TimeSeries is expecting an instance of \");\n            b.append(this.timePeriodClass.getName());\n            b.append(\".\");\n            throw new org.jfree.data.general.SeriesException(b.toString());\n        }\n\n    boolean added \u003d false;\n    int count \u003d getItemCount();\n    if (count \u003d\u003d 0) {\n        this.data.add(item);\n        added \u003d true;\n    } else {\n        org.jfree.data.time.RegularTimePeriod last \u003d getTimePeriod(((getItemCount()) - 1));\n        if ((item.getPeriod().compareTo(last)) \u003e 0) {\n            this.data.add(item);\n            added \u003d true;\n        } else {\n            int index \u003d java.util.Collections.binarySearch(this.data, item);\n            if (index \u003c 0) {\n                this.data.add(((-index) - 1), item);\n                added \u003d true;\n            } else {\n                java.lang.StringBuffer b \u003d new java.lang.StringBuffer();\n                b.append(\"You are attempting to add an observation for \");\n                b.append(\"the time period \");\n                b.append(item.getPeriod().toString());\n                b.append(\" but the series already contains an observation\");\n                b.append(\" for that time period. Duplicates are not \");\n                b.append(\"permitted.  Try using the addOrUpdate() method.\");\n                throw new org.jfree.data.general.SeriesException(b.toString());\n            }\n        }\n    }\n    if (added) {\n        updateBoundsForAddedItem(item);\n        if ((getItemCount()) \u003e (this.maximumItemCount)) {\n            org.jfree.data.time.TimeSeriesDataItem d \u003d ((org.jfree.data.time.TimeSeriesDataItem) (this.data.remove(0)));\n            updateBoundsForRemovedItem(d);\n        }\n        removeAgedItems(false);\n        if (notify) {\n            fireSeriesChanged();\n        }\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 579,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart3"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        findBoundsByIteration();",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "findBoundsByIteration()",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (item \u003d\u003d null) {\n        throw new java.lang.IllegalArgumentException(\"Null \u0027item\u0027 argument.\");\n    }\n    findBoundsByIteration();\n    item \u003d ((org.jfree.data.time.TimeSeriesDataItem) (item.clone()));\n    java.lang.Class c \u003d item.getPeriod().getClass();\n    if ((this.timePeriodClass) \u003d\u003d null) {\n        this.timePeriodClass \u003d c;\n    } else\n        if (!(this.timePeriodClass.equals(c))) {\n            java.lang.StringBuffer b \u003d new java.lang.StringBuffer();\n            b.append(\"You are trying to add data where the time period class \");\n            b.append(\"is \");\n            b.append(item.getPeriod().getClass().getName());\n            b.append(\", but the TimeSeries is expecting an instance of \");\n            b.append(this.timePeriodClass.getName());\n            b.append(\".\");\n            throw new org.jfree.data.general.SeriesException(b.toString());\n        }\n\n    boolean added \u003d false;\n    int count \u003d getItemCount();\n    if (count \u003d\u003d 0) {\n        this.data.add(item);\n        added \u003d true;\n    } else {\n        org.jfree.data.time.RegularTimePeriod last \u003d getTimePeriod(((getItemCount()) - 1));\n        if ((item.getPeriod().compareTo(last)) \u003e 0) {\n            this.data.add(item);\n            added \u003d true;\n        } else {\n            int index \u003d java.util.Collections.binarySearch(this.data, item);\n            if (index \u003c 0) {\n                this.data.add(((-index) - 1), item);\n                added \u003d true;\n            } else {\n                java.lang.StringBuffer b \u003d new java.lang.StringBuffer();\n                b.append(\"You are attempting to add an observation for \");\n                b.append(\"the time period \");\n                b.append(item.getPeriod().toString());\n                b.append(\" but the series already contains an observation\");\n                b.append(\" for that time period. Duplicates are not \");\n                b.append(\"permitted.  Try using the addOrUpdate() method.\");\n                throw new org.jfree.data.general.SeriesException(b.toString());\n            }\n        }\n    }\n    if (added) {\n        updateBoundsForAddedItem(item);\n        if ((getItemCount()) \u003e (this.maximumItemCount)) {\n            org.jfree.data.time.TimeSeriesDataItem d \u003d ((org.jfree.data.time.TimeSeriesDataItem) (this.data.remove(0)));\n            updateBoundsForRemovedItem(d);\n        }\n        removeAgedItems(false);\n        if (notify) {\n            fireSeriesChanged();\n        }\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 579,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart3"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:Insert_Invocation",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        findBoundsByIteration();",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Invocation",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "findBoundsByIteration()",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (item \u003d\u003d null) {\n        throw new java.lang.IllegalArgumentException(\"Null \u0027item\u0027 argument.\");\n    }\n    findBoundsByIteration();\n    item \u003d ((org.jfree.data.time.TimeSeriesDataItem) (item.clone()));\n    java.lang.Class c \u003d item.getPeriod().getClass();\n    if ((this.timePeriodClass) \u003d\u003d null) {\n        this.timePeriodClass \u003d c;\n    } else\n        if (!(this.timePeriodClass.equals(c))) {\n            java.lang.StringBuffer b \u003d new java.lang.StringBuffer();\n            b.append(\"You are trying to add data where the time period class \");\n            b.append(\"is \");\n            b.append(item.getPeriod().getClass().getName());\n            b.append(\", but the TimeSeries is expecting an instance of \");\n            b.append(this.timePeriodClass.getName());\n            b.append(\".\");\n            throw new org.jfree.data.general.SeriesException(b.toString());\n        }\n\n    boolean added \u003d false;\n    int count \u003d getItemCount();\n    if (count \u003d\u003d 0) {\n        this.data.add(item);\n        added \u003d true;\n    } else {\n        org.jfree.data.time.RegularTimePeriod last \u003d getTimePeriod(((getItemCount()) - 1));\n        if ((item.getPeriod().compareTo(last)) \u003e 0) {\n            this.data.add(item);\n            added \u003d true;\n        } else {\n            int index \u003d java.util.Collections.binarySearch(this.data, item);\n            if (index \u003c 0) {\n                this.data.add(((-index) - 1), item);\n                added \u003d true;\n            } else {\n                java.lang.StringBuffer b \u003d new java.lang.StringBuffer();\n                b.append(\"You are attempting to add an observation for \");\n                b.append(\"the time period \");\n                b.append(item.getPeriod().toString());\n                b.append(\" but the series already contains an observation\");\n                b.append(\" for that time period. Duplicates are not \");\n                b.append(\"permitted.  Try using the addOrUpdate() method.\");\n                throw new org.jfree.data.general.SeriesException(b.toString());\n            }\n        }\n    }\n    if (added) {\n        updateBoundsForAddedItem(item);\n        if ((getItemCount()) \u003e (this.maximumItemCount)) {\n            org.jfree.data.time.TimeSeriesDataItem d \u003d ((org.jfree.data.time.TimeSeriesDataItem) (this.data.remove(0)));\n            updateBoundsForRemovedItem(d);\n        }\n        removeAgedItems(false);\n        if (notify) {\n            fireSeriesChanged();\n        }\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 579,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Chart5",
+      "repairability": [
+        {
+          "tool-name": "JMutRepair",
+          "pattern-name": "JMutRepair:unary",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            }\r",
+          "CHANGE_new:": "",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "UnaryOperator",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "UnaryOperator",
+                "dst_type": "null",
+                "src": "(-index)",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "((-index) - 1)",
+                "dst_parent": "null"
+              },
+              "line": 564,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart5"
+            }
+          ]
+        },
+        {
+          "tool-name": "JKali",
+          "pattern-name": "JKali:del",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            }\r",
+          "CHANGE_new:": "",
+          "instance_detail": [
+            {
+              "pattern_action": "DEL",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "this.data.add(((-index) - 1), new org.jfree.data.xy.XYDataItem(x, y))",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    this.data.add(((-index) - 1), new org.jfree.data.xy.XYDataItem(x, y));\n}",
+                "dst_parent": "null"
+              },
+              "line": 564,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart5"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            }\r",
+          "CHANGE_new:": "",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "this.data.add(((-index) - 1), new org.jfree.data.xy.XYDataItem(x, y))",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    this.data.add(((-index) - 1), new org.jfree.data.xy.XYDataItem(x, y));\n}",
+                "dst_parent": "null"
+              },
+              "line": 564,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart5"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement9",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            }\r",
+          "CHANGE_new:": "",
+          "instance_detail": [
+            {
+              "pattern_action": "DEL",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "TypeAccess",
+                "dst_type": "null",
+                "src": "org.jfree.data.xy.XYSeries",
+                "dst": "null",
+                "src_parent_type": "ThisAccess",
+                "dst_parent_type": "null",
+                "src_parent": "this",
+                "dst_parent": "null"
+              },
+              "line": -1
+            },
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "VariableRead",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "VariableRead",
+                "dst_type": "null",
+                "src": "x",
+                "dst": "null",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "null",
+                "src_parent": "add(x, y, true)",
+                "dst_parent": "null"
+              },
+              "line": 563,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart5"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            }\r",
+          "CHANGE_new:": "",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "MOV",
+                "src_type": "If",
+                "dst_type": "If",
+                "src": "if ((getItemCount()) \u003e (this.maximumItemCount)) {\n    this.data.remove(0);\n}",
+                "dst": "if ((getItemCount()) \u003e (this.maximumItemCount)) {\n    this.data.remove(0);\n}",
+                "src_parent_type": "Block",
+                "dst_parent_type": "Block",
+                "src_parent": "{\n    if (this.autoSort) {\n        this.data.add(((-index) - 1), new org.jfree.data.xy.XYDataItem(x, y));\n    } else {\n        this.data.add(new org.jfree.data.xy.XYDataItem(x, y));\n    }\n    if ((getItemCount()) \u003e (this.maximumItemCount)) {\n        this.data.remove(0);\n    }\n}",
+                "dst_parent": "{\n    add(x, y, true);\n    if ((getItemCount()) \u003e (this.maximumItemCount)) {\n        this.data.remove(0);\n    }\n}"
+              },
+              "line": 570,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "instances": [
+    {
+      "revision": "Math73",
+      "repairability": [
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return solve(f, initial, yInitial, max, yMax, initial, yInitial);",
+          "CHANGE_new:": "            return solve(f, min, max);\r",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "VariableRead",
+                "dst_type": "VariableRead",
+                "src": "initial",
+                "dst": "min",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "Invocation",
+                "src_parent": "solve(f, initial, yInitial, max, yMax, initial, yInitial)",
+                "dst_parent": "solve(f, min, max)"
+              },
+              "line": 133,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math73"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement5",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return solve(f, initial, yInitial, max, yMax, initial, yInitial);",
+          "CHANGE_new:": "            return solve(f, min, max);\r",
+          "instance_detail": [
+            {
+              "pattern_action": "UPD",
+              "pattern_entity": {
+                "entity_type": "VariableRead",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "VariableRead",
+                "dst_type": "VariableRead",
+                "src": "initial",
+                "dst": "min",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "Invocation",
+                "src_parent": "solve(f, initial, yInitial, max, yMax, initial, yInitial)",
+                "dst_parent": "solve(f, min, max)"
+              },
+              "line": 133,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math73"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return solve(f, initial, yInitial, max, yMax, initial, yInitial);",
+          "CHANGE_new:": "            return solve(f, min, max);\r",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "VariableRead",
+                "dst_type": "VariableRead",
+                "src": "initial",
+                "dst": "min",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "Invocation",
+                "src_parent": "solve(f, initial, yInitial, max, yMax, initial, yInitial)",
+                "dst_parent": "solve(f, min, max)"
+              },
+              "line": 133,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math73"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:update_return",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return solve(f, initial, yInitial, max, yMax, initial, yInitial);",
+          "CHANGE_new:": "            return solve(f, min, max);\r",
+          "instance_detail": [
+            {
+              "pattern_action": "UPD",
+              "pattern_entity": {
+                "entity_type": "VariableRead",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "VariableRead",
+                "dst_type": "VariableRead",
+                "src": "initial",
+                "dst": "min",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "Invocation",
+                "src_parent": "solve(f, initial, yInitial, max, yMax, initial, yInitial)",
+                "dst_parent": "solve(f, min, max)"
+              },
+              "line": 133,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math73"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

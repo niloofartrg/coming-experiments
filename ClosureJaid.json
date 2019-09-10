@@ -1,0 +1,580 @@
+{
+  "instances": [
+    {
+      "revision": "Closure126",
+      "repairability": [
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_upd_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "      if (NodeUtil.hasFinally(n)) {",
+          "CHANGE_new:": "      if (false) {",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "condition",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "TypeAccess",
+                "dst_type": "null",
+                "src": "com.google.javascript.jscomp.NodeUtil",
+                "dst": "null",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "null",
+                "src_parent": "com.google.javascript.jscomp.NodeUtil.hasFinally(n)",
+                "dst_parent": "null"
+              },
+              "line": 141,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure126"
+            }
+          ]
+        },
+        {
+          "tool-name": "JKali",
+          "pattern-name": "JKali:changetoT",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "      if (NodeUtil.hasFinally(n)) {",
+          "CHANGE_new:": "      if (false) {",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "false",
+                "entity_role": "condition",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Literal",
+                "dst_type": "null",
+                "src": "false",
+                "dst": "null",
+                "src_parent_type": "If",
+                "dst_parent_type": "null",
+                "src_parent": "if (false) {\n    com.google.javascript.rhino.Node finallyBlock \u003d n.getLastChild();\n    tryMinimizeExits(finallyBlock, exitType, labelName);\n}",
+                "dst_parent": "null"
+              },
+              "line": 141,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure126"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "      if (NodeUtil.hasFinally(n)) {",
+          "CHANGE_new:": "      if (false) {",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Literal",
+                "dst_type": "null",
+                "src": "false",
+                "dst": "null",
+                "src_parent_type": "If",
+                "dst_parent_type": "null",
+                "src_parent": "if (false) {\n    com.google.javascript.rhino.Node finallyBlock \u003d n.getLastChild();\n    tryMinimizeExits(finallyBlock, exitType, labelName);\n}",
+                "dst_parent": "null"
+              },
+              "line": 141,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure126"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Closure18",
+      "repairability": [
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_upd_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "      if (options.dependencyOptions.needsManagement() \u0026\u0026 options.closurePass) {",
+          "CHANGE_new:": "      if (options.dependencyOptions.needsManagement() \u0026\u0026 true) {",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "condition",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Literal",
+                "dst_type": "null",
+                "src": "true",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(options.dependencyOptions.needsManagement()) \u0026\u0026 true",
+                "dst_parent": "null"
+              },
+              "line": 1288,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure18"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "      if (options.dependencyOptions.needsManagement() \u0026\u0026 options.closurePass) {",
+          "CHANGE_new:": "      if (options.dependencyOptions.needsManagement() \u0026\u0026 true) {",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Literal",
+                "dst_type": "null",
+                "src": "true",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(options.dependencyOptions.needsManagement()) \u0026\u0026 true",
+                "dst_parent": "null"
+              },
+              "line": 1288,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure18"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "      if (options.dependencyOptions.needsManagement() \u0026\u0026 options.closurePass) {",
+          "CHANGE_new:": "      if (options.dependencyOptions.needsManagement() \u0026\u0026 true) {",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Literal",
+                "dst_type": "null",
+                "src": "true",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(options.dependencyOptions.needsManagement()) \u0026\u0026 true",
+                "dst_parent": "null"
+              },
+              "line": 1288,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Closure31",
+      "repairability": [
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_upd_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "          !options.skipAllPasses \u0026\u0026",
+          "CHANGE_new:": "          !false \u0026\u0026",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "condition",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Literal",
+                "dst_type": "null",
+                "src": "false",
+                "dst": "null",
+                "src_parent_type": "UnaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(!false)",
+                "dst_parent": "null"
+              },
+              "line": 1285,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure31"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "          !options.skipAllPasses \u0026\u0026",
+          "CHANGE_new:": "          !false \u0026\u0026",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Literal",
+                "dst_type": "null",
+                "src": "false",
+                "dst": "null",
+                "src_parent_type": "UnaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(!false)",
+                "dst_parent": "null"
+              },
+              "line": 1285,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure31"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "          !options.skipAllPasses \u0026\u0026",
+          "CHANGE_new:": "          !false \u0026\u0026",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Literal",
+                "dst_type": "null",
+                "src": "false",
+                "dst": "null",
+                "src_parent_type": "UnaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(!false)",
+                "dst_parent": "null"
+              },
+              "line": 1285,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure31"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Closure33",
+      "repairability": [
+        {
+          "tool-name": "JKali",
+          "pattern-name": "JKali:add_rtrn",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "          }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Return",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    return;\n}",
+                "dst_parent": "null"
+              },
+              "line": 558,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure33"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "          }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (((hasReferenceName()) \u0026\u0026 (constraintObj.isRecordType())) \u003d\u003d true) {\n    return;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (((hasReferenceName()) \u0026\u0026 (constraintObj.isRecordType())) \u003d\u003d true) {\n        return;\n    }\n    if (constraintObj.isRecordType()) {\n        for (java.lang.String prop : constraintObj.getOwnPropertyNames()) {\n            com.google.javascript.rhino.jstype.JSType propType \u003d constraintObj.getPropertyType(prop);\n            if (!(isPropertyTypeDeclared(prop))) {\n                com.google.javascript.rhino.jstype.JSType typeToInfer \u003d propType;\n                if (!(hasProperty(prop))) {\n                    typeToInfer \u003d getNativeType(JSTypeNative.VOID_TYPE).getLeastSupertype(propType);\n                }\n                defineInferredProperty(prop, typeToInfer, null);\n            }\n        }\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 557,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure33"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement3",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "          }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Return",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    return;\n}",
+                "dst_parent": "null"
+              },
+              "line": 558,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure33"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "          }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (((hasReferenceName()) \u0026\u0026 (constraintObj.isRecordType())) \u003d\u003d true) {\n    return;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (((hasReferenceName()) \u0026\u0026 (constraintObj.isRecordType())) \u003d\u003d true) {\n        return;\n    }\n    if (constraintObj.isRecordType()) {\n        for (java.lang.String prop : constraintObj.getOwnPropertyNames()) {\n            com.google.javascript.rhino.jstype.JSType propType \u003d constraintObj.getPropertyType(prop);\n            if (!(isPropertyTypeDeclared(prop))) {\n                com.google.javascript.rhino.jstype.JSType typeToInfer \u003d propType;\n                if (!(hasProperty(prop))) {\n                    typeToInfer \u003d getNativeType(JSTypeNative.VOID_TYPE).getLeastSupertype(propType);\n                }\n                defineInferredProperty(prop, typeToInfer, null);\n            }\n        }\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 557,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure33"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:Insert_Invocation",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "          }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Invocation",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "(hasReferenceName())",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "((hasReferenceName()) \u0026\u0026 (constraintObj.isRecordType()))",
+                "dst_parent": "null"
+              },
+              "line": 557,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure33"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Closure40",
+      "repairability": [
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement11",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "          JsName name \u003d getName(ns.name, false);",
+          "CHANGE_new:": "          JsName name \u003d getName(ns.name, true);",
+          "instance_detail": [
+            {
+              "pattern_action": "UPD",
+              "pattern_entity": {
+                "entity_type": "Literal",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "Literal",
+                "dst_type": "Literal",
+                "src": "false",
+                "dst": "true",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "Invocation",
+                "src_parent": "getName(ns.name, false)",
+                "dst_parent": "getName(ns.name, true)"
+              },
+              "line": 635,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure40"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "          JsName name \u003d getName(ns.name, false);",
+          "CHANGE_new:": "          JsName name \u003d getName(ns.name, true);",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "Literal",
+                "dst_type": "Literal",
+                "src": "false",
+                "dst": "true",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "Invocation",
+                "src_parent": "getName(ns.name, false)",
+                "dst_parent": "getName(ns.name, true)"
+              },
+              "line": 635,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure40"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

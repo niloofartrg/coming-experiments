@@ -1,0 +1,191 @@
+{
+  "instances": [
+    {
+      "revision": "Lang55",
+      "repairability": [
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_ins_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((org.apache.commons.lang.time.StopWatch.STATE_STOPPED) \u003e (runningState)) {\n    stopTime \u003d java.lang.System.currentTimeMillis();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_RUNNING)) \u0026\u0026 ((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_SUSPENDED))) {\n        throw new java.lang.IllegalStateException(\"Stopwatch is not running. \");\n    }\n    if ((org.apache.commons.lang.time.StopWatch.STATE_STOPPED) \u003e (runningState)) {\n        stopTime \u003d java.lang.System.currentTimeMillis();\n    }\n    this.runningState \u003d org.apache.commons.lang.time.StopWatch.STATE_STOPPED;\n}",
+                "dst_parent": "null"
+              },
+              "line": 118,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang55"
+            },
+            {
+              "pattern_action": "MOV",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Then",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "MOV",
+                "src_type": "Assignment",
+                "dst_type": "Assignment",
+                "src": "stopTime \u003d java.lang.System.currentTimeMillis()",
+                "dst": "stopTime \u003d java.lang.System.currentTimeMillis()",
+                "src_parent_type": "Block",
+                "dst_parent_type": "Block",
+                "src_parent": "{\n    if (((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_RUNNING)) \u0026\u0026 ((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_SUSPENDED))) {\n        throw new java.lang.IllegalStateException(\"Stopwatch is not running. \");\n    }\n    stopTime \u003d java.lang.System.currentTimeMillis();\n    this.runningState \u003d org.apache.commons.lang.time.StopWatch.STATE_STOPPED;\n}",
+                "dst_parent": "{\n    stopTime \u003d java.lang.System.currentTimeMillis();\n}"
+              },
+              "line": 118,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang55"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((org.apache.commons.lang.time.StopWatch.STATE_STOPPED) \u003e (runningState)) {\n    stopTime \u003d java.lang.System.currentTimeMillis();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_RUNNING)) \u0026\u0026 ((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_SUSPENDED))) {\n        throw new java.lang.IllegalStateException(\"Stopwatch is not running. \");\n    }\n    if ((org.apache.commons.lang.time.StopWatch.STATE_STOPPED) \u003e (runningState)) {\n        stopTime \u003d java.lang.System.currentTimeMillis();\n    }\n    this.runningState \u003d org.apache.commons.lang.time.StopWatch.STATE_STOPPED;\n}",
+                "dst_parent": "null"
+              },
+              "line": 118,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang55"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement4",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "MOV",
+              "pattern_entity": {
+                "entity_type": "Assignment",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "MOV",
+                "src_type": "Assignment",
+                "dst_type": "Assignment",
+                "src": "stopTime \u003d java.lang.System.currentTimeMillis()",
+                "dst": "stopTime \u003d java.lang.System.currentTimeMillis()",
+                "src_parent_type": "Block",
+                "dst_parent_type": "Block",
+                "src_parent": "{\n    if (((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_RUNNING)) \u0026\u0026 ((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_SUSPENDED))) {\n        throw new java.lang.IllegalStateException(\"Stopwatch is not running. \");\n    }\n    stopTime \u003d java.lang.System.currentTimeMillis();\n    this.runningState \u003d org.apache.commons.lang.time.StopWatch.STATE_STOPPED;\n}",
+                "dst_parent": "{\n    stopTime \u003d java.lang.System.currentTimeMillis();\n}"
+              },
+              "line": 118,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang55"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((org.apache.commons.lang.time.StopWatch.STATE_STOPPED) \u003e (runningState)) {\n    stopTime \u003d java.lang.System.currentTimeMillis();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_RUNNING)) \u0026\u0026 ((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_SUSPENDED))) {\n        throw new java.lang.IllegalStateException(\"Stopwatch is not running. \");\n    }\n    if ((org.apache.commons.lang.time.StopWatch.STATE_STOPPED) \u003e (runningState)) {\n        stopTime \u003d java.lang.System.currentTimeMillis();\n    }\n    this.runningState \u003d org.apache.commons.lang.time.StopWatch.STATE_STOPPED;\n}",
+                "dst_parent": "null"
+              },
+              "line": 118,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang55"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:check_length",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((org.apache.commons.lang.time.StopWatch.STATE_STOPPED) \u003e (runningState)) {\n    stopTime \u003d java.lang.System.currentTimeMillis();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_RUNNING)) \u0026\u0026 ((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_SUSPENDED))) {\n        throw new java.lang.IllegalStateException(\"Stopwatch is not running. \");\n    }\n    if ((org.apache.commons.lang.time.StopWatch.STATE_STOPPED) \u003e (runningState)) {\n        stopTime \u003d java.lang.System.currentTimeMillis();\n    }\n    this.runningState \u003d org.apache.commons.lang.time.StopWatch.STATE_STOPPED;\n}",
+                "dst_parent": "null"
+              },
+              "line": 118,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang55"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
