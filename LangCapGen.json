@@ -1,0 +1,176 @@
+{
+  "instances": [
+    {
+      "revision": "Lang43",
+      "repairability": [
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        next(pos);",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "next(pos)",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    int start \u003d pos.getIndex();\n    next(pos);\n    char[] c \u003d pattern.toCharArray();\n    if (escapingOn \u0026\u0026 ((c[start]) \u003d\u003d (org.apache.commons.lang.text.ExtendedMessageFormat.QUOTE))) {\n        return appendTo \u003d\u003d null ? null : appendTo.append(org.apache.commons.lang.text.ExtendedMessageFormat.QUOTE);\n    }\n    int lastHold \u003d start;\n    for (int i \u003d pos.getIndex(); i \u003c (pattern.length()); i++) {\n        if (escapingOn \u0026\u0026 (pattern.substring(i).startsWith(org.apache.commons.lang.text.ExtendedMessageFormat.ESCAPED_QUOTE))) {\n            appendTo.append(c, lastHold, ((pos.getIndex()) - lastHold)).append(org.apache.commons.lang.text.ExtendedMessageFormat.QUOTE);\n            pos.setIndex((i + (org.apache.commons.lang.text.ExtendedMessageFormat.ESCAPED_QUOTE.length())));\n            lastHold \u003d pos.getIndex();\n            continue;\n        }\n        switch (c[pos.getIndex()]) {\n            case org.apache.commons.lang.text.ExtendedMessageFormat.QUOTE :\n                next(pos);\n                return appendTo \u003d\u003d null ? null : appendTo.append(c, lastHold, ((pos.getIndex()) - lastHold));\n            default :\n                next(pos);\n        }\n    }\n    throw new java.lang.IllegalArgumentException((\"Unterminated quoted string at position \" + start));\n}",
+                "dst_parent": "null"
+              },
+              "line": 420,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang43"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        next(pos);",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "next(pos)",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    int start \u003d pos.getIndex();\n    next(pos);\n    char[] c \u003d pattern.toCharArray();\n    if (escapingOn \u0026\u0026 ((c[start]) \u003d\u003d (org.apache.commons.lang.text.ExtendedMessageFormat.QUOTE))) {\n        return appendTo \u003d\u003d null ? null : appendTo.append(org.apache.commons.lang.text.ExtendedMessageFormat.QUOTE);\n    }\n    int lastHold \u003d start;\n    for (int i \u003d pos.getIndex(); i \u003c (pattern.length()); i++) {\n        if (escapingOn \u0026\u0026 (pattern.substring(i).startsWith(org.apache.commons.lang.text.ExtendedMessageFormat.ESCAPED_QUOTE))) {\n            appendTo.append(c, lastHold, ((pos.getIndex()) - lastHold)).append(org.apache.commons.lang.text.ExtendedMessageFormat.QUOTE);\n            pos.setIndex((i + (org.apache.commons.lang.text.ExtendedMessageFormat.ESCAPED_QUOTE.length())));\n            lastHold \u003d pos.getIndex();\n            continue;\n        }\n        switch (c[pos.getIndex()]) {\n            case org.apache.commons.lang.text.ExtendedMessageFormat.QUOTE :\n                next(pos);\n                return appendTo \u003d\u003d null ? null : appendTo.append(c, lastHold, ((pos.getIndex()) - lastHold));\n            default :\n                next(pos);\n        }\n    }\n    throw new java.lang.IllegalArgumentException((\"Unterminated quoted string at position \" + start));\n}",
+                "dst_parent": "null"
+              },
+              "line": 420,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang43"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:Insert_Invocation",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        next(pos);",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Invocation",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "next(pos)",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    int start \u003d pos.getIndex();\n    next(pos);\n    char[] c \u003d pattern.toCharArray();\n    if (escapingOn \u0026\u0026 ((c[start]) \u003d\u003d (org.apache.commons.lang.text.ExtendedMessageFormat.QUOTE))) {\n        return appendTo \u003d\u003d null ? null : appendTo.append(org.apache.commons.lang.text.ExtendedMessageFormat.QUOTE);\n    }\n    int lastHold \u003d start;\n    for (int i \u003d pos.getIndex(); i \u003c (pattern.length()); i++) {\n        if (escapingOn \u0026\u0026 (pattern.substring(i).startsWith(org.apache.commons.lang.text.ExtendedMessageFormat.ESCAPED_QUOTE))) {\n            appendTo.append(c, lastHold, ((pos.getIndex()) - lastHold)).append(org.apache.commons.lang.text.ExtendedMessageFormat.QUOTE);\n            pos.setIndex((i + (org.apache.commons.lang.text.ExtendedMessageFormat.ESCAPED_QUOTE.length())));\n            lastHold \u003d pos.getIndex();\n            continue;\n        }\n        switch (c[pos.getIndex()]) {\n            case org.apache.commons.lang.text.ExtendedMessageFormat.QUOTE :\n                next(pos);\n                return appendTo \u003d\u003d null ? null : appendTo.append(c, lastHold, ((pos.getIndex()) - lastHold));\n            default :\n                next(pos);\n        }\n    }\n    throw new java.lang.IllegalArgumentException((\"Unterminated quoted string at position \" + start));\n}",
+                "dst_parent": "null"
+              },
+              "line": 420,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang43"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Lang57",
+      "repairability": [
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        return cAvailableLocaleSet.contains(locale);",
+          "CHANGE_new:": "        return org.apache.commons.lang.LocaleUtils.cAvailableLocaleList.contains(locale);",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "FieldRead",
+                "dst_type": "FieldRead",
+                "src": "org.apache.commons.lang.LocaleUtils.cAvailableLocaleSet",
+                "dst": "org.apache.commons.lang.LocaleUtils.cAvailableLocaleList",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "Invocation",
+                "src_parent": "org.apache.commons.lang.LocaleUtils.cAvailableLocaleSet.contains(locale)",
+                "dst_parent": "org.apache.commons.lang.LocaleUtils.cAvailableLocaleList.contains(locale)"
+              },
+              "line": 223,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang57"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        return cAvailableLocaleSet.contains(locale);",
+          "CHANGE_new:": "        return org.apache.commons.lang.LocaleUtils.cAvailableLocaleList.contains(locale);",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "FieldRead",
+                "dst_type": "FieldRead",
+                "src": "org.apache.commons.lang.LocaleUtils.cAvailableLocaleSet",
+                "dst": "org.apache.commons.lang.LocaleUtils.cAvailableLocaleList",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "Invocation",
+                "src_parent": "org.apache.commons.lang.LocaleUtils.cAvailableLocaleSet.contains(locale)",
+                "dst_parent": "org.apache.commons.lang.LocaleUtils.cAvailableLocaleList.contains(locale)"
+              },
+              "line": 223,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang57"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

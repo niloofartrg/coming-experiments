@@ -1,0 +1,262 @@
+{
+  "instances": [
+    {
+      "revision": "Lang35",
+      "repairability": [
+        {
+          "tool-name": "JKali",
+          "pattern-name": "JKali:del",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return (T[]) new Object[] { null };",
+          "CHANGE_new:": "                throw new IllegalArgumentException(\"The Integer did not match any specified value\");",
+          "instance_detail": [
+            {
+              "pattern_action": "DEL",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "Assignment",
+                "dst_type": "null",
+                "src": "type \u003d java.lang.Object.class",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    type \u003d java.lang.Object.class;\n}",
+                "dst_parent": "null"
+              },
+              "line": 3295,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang35"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return (T[]) new Object[] { null };",
+          "CHANGE_new:": "                throw new IllegalArgumentException(\"The Integer did not match any specified value\");",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "Assignment",
+                "dst_type": "null",
+                "src": "type \u003d java.lang.Object.class",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    type \u003d java.lang.Object.class;\n}",
+                "dst_parent": "null"
+              },
+              "line": 3295,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang35"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return (T[]) new Object[] { null };",
+          "CHANGE_new:": "                throw new IllegalArgumentException(\"The Integer did not match any specified value\");",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "Assignment",
+                "dst_type": "null",
+                "src": "type \u003d java.lang.Object.class",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    type \u003d java.lang.Object.class;\n}",
+                "dst_parent": "null"
+              },
+              "line": 3295,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang35"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Lang45",
+      "repairability": [
+        {
+          "tool-name": "JMutRepair",
+          "pattern-name": "JMutRepair:unary",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "",
+          "CHANGE_new:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "UnaryOperator",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "UnaryOperator",
+                "dst_type": "null",
+                "src": "(-1)",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(upper \u003d\u003d (-1))",
+                "dst_parent": "null"
+              },
+              "line": 625,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang45"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "",
+          "CHANGE_new:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((upper \u003d\u003d (-1)) || (upper \u003e (str.length()))) {\n    upper \u003d str.length();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (str \u003d\u003d null) {\n        return null;\n    }\n    if ((str.length()) \u003d\u003d 0) {\n        return StringUtils.EMPTY;\n    }\n    if ((upper \u003d\u003d (-1)) || (upper \u003e (str.length()))) {\n        upper \u003d str.length();\n    }\n    if (upper \u003c lower) {\n        upper \u003d lower;\n    }\n    if ((upper \u003d\u003d (-1)) || (upper \u003e (str.length()))) {\n        upper \u003d str.length();\n    }\n    java.lang.StringBuffer result \u003d new java.lang.StringBuffer();\n    int index \u003d org.apache.commons.lang.StringUtils.indexOf(str, \" \", lower);\n    if (index \u003d\u003d (-1)) {\n        result.append(str.substring(0, upper));\n        if (upper !\u003d (str.length())) {\n            result.append(org.apache.commons.lang.StringUtils.defaultString(appendToEnd));\n        }\n    } else\n        if (index \u003e upper) {\n            result.append(str.substring(0, upper));\n            result.append(org.apache.commons.lang.StringUtils.defaultString(appendToEnd));\n        } else {\n            result.append(str.substring(0, index));\n            result.append(org.apache.commons.lang.StringUtils.defaultString(appendToEnd));\n        }\n\n    return result.toString();\n}",
+                "dst_parent": "null"
+              },
+              "line": 625,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang45"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement1",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "",
+          "CHANGE_new:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Assignment",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Assignment",
+                "dst_type": "null",
+                "src": "upper \u003d str.length()",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    upper \u003d str.length();\n}",
+                "dst_parent": "null"
+              },
+              "line": 626,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang45"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "",
+          "CHANGE_new:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((upper \u003d\u003d (-1)) || (upper \u003e (str.length()))) {\n    upper \u003d str.length();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (str \u003d\u003d null) {\n        return null;\n    }\n    if ((str.length()) \u003d\u003d 0) {\n        return StringUtils.EMPTY;\n    }\n    if ((upper \u003d\u003d (-1)) || (upper \u003e (str.length()))) {\n        upper \u003d str.length();\n    }\n    if (upper \u003c lower) {\n        upper \u003d lower;\n    }\n    if ((upper \u003d\u003d (-1)) || (upper \u003e (str.length()))) {\n        upper \u003d str.length();\n    }\n    java.lang.StringBuffer result \u003d new java.lang.StringBuffer();\n    int index \u003d org.apache.commons.lang.StringUtils.indexOf(str, \" \", lower);\n    if (index \u003d\u003d (-1)) {\n        result.append(str.substring(0, upper));\n        if (upper !\u003d (str.length())) {\n            result.append(org.apache.commons.lang.StringUtils.defaultString(appendToEnd));\n        }\n    } else\n        if (index \u003e upper) {\n            result.append(str.substring(0, upper));\n            result.append(org.apache.commons.lang.StringUtils.defaultString(appendToEnd));\n        } else {\n            result.append(str.substring(0, index));\n            result.append(org.apache.commons.lang.StringUtils.defaultString(appendToEnd));\n        }\n\n    return result.toString();\n}",
+                "dst_parent": "null"
+              },
+              "line": 625,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang45"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:Insert_Invocation",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "",
+          "CHANGE_new:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Invocation",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "(str.length())",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(upper \u003e (str.length()))",
+                "dst_parent": "null"
+              },
+              "line": 625,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang45"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

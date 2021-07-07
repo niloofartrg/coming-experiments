@@ -1,0 +1,153 @@
+{
+  "instances": [
+    {
+      "revision": "Chart5",
+      "repairability": [
+        {
+          "tool-name": "JMutRepair",
+          "pattern-name": "JMutRepair:unary",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            if (this.autoSort) {\r",
+          "CHANGE_new:": "            if (!(org.jfree.data.xy.XYSeries.this.allowDuplicateXValues)) {",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "UnaryOperator",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "UnaryOperator",
+                "dst_type": "null",
+                "src": "!(this.allowDuplicateXValues)",
+                "dst": "null",
+                "src_parent_type": "If",
+                "dst_parent_type": "null",
+                "src_parent": "if (!(this.allowDuplicateXValues)) {\n    this.data.add(((-index) - 1), new org.jfree.data.xy.XYDataItem(x, y));\n} else {\n    this.data.add(new org.jfree.data.xy.XYDataItem(x, y));\n}",
+                "dst_parent": "null"
+              },
+              "line": 563,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart5"
+            }
+          ]
+        },
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_upd_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            if (this.autoSort) {\r",
+          "CHANGE_new:": "            if (!(org.jfree.data.xy.XYSeries.this.allowDuplicateXValues)) {",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "condition",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "FieldRead",
+                "dst_type": "FieldRead",
+                "src": "this.autoSort",
+                "dst": "(this.allowDuplicateXValues)",
+                "src_parent_type": "If",
+                "dst_parent_type": "UnaryOperator",
+                "src_parent": "if (this.autoSort) {\n    this.data.add(((-index) - 1), new org.jfree.data.xy.XYDataItem(x, y));\n} else {\n    this.data.add(new org.jfree.data.xy.XYDataItem(x, y));\n}",
+                "dst_parent": "!(this.allowDuplicateXValues)"
+              },
+              "line": 563,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart5"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            if (this.autoSort) {\r",
+          "CHANGE_new:": "            if (!(org.jfree.data.xy.XYSeries.this.allowDuplicateXValues)) {",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "UnaryOperator",
+                "dst_type": "null",
+                "src": "!(this.allowDuplicateXValues)",
+                "dst": "null",
+                "src_parent_type": "If",
+                "dst_parent_type": "null",
+                "src_parent": "if (!(this.allowDuplicateXValues)) {\n    this.data.add(((-index) - 1), new org.jfree.data.xy.XYDataItem(x, y));\n} else {\n    this.data.add(new org.jfree.data.xy.XYDataItem(x, y));\n}",
+                "dst_parent": "null"
+              },
+              "line": 563,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart5"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            if (this.autoSort) {\r",
+          "CHANGE_new:": "            if (!(org.jfree.data.xy.XYSeries.this.allowDuplicateXValues)) {",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "UnaryOperator",
+                "dst_type": "null",
+                "src": "!(this.allowDuplicateXValues)",
+                "dst": "null",
+                "src_parent_type": "If",
+                "dst_parent_type": "null",
+                "src_parent": "if (!(this.allowDuplicateXValues)) {\n    this.data.add(((-index) - 1), new org.jfree.data.xy.XYDataItem(x, y));\n} else {\n    this.data.add(new org.jfree.data.xy.XYDataItem(x, y));\n}",
+                "dst_parent": "null"
+              },
+              "line": 563,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

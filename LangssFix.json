@@ -1,0 +1,223 @@
+{
+  "instances": [
+    {
+      "revision": "Lang33",
+      "repairability": [
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_ins_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((array[i]) !\u003d null) {\n    classes[i] \u003d array[i].getClass();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if ((array[i]) !\u003d null) {\n        classes[i] \u003d array[i].getClass();\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 910,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang33"
+            },
+            {
+              "pattern_action": "MOV",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Then",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "MOV",
+                "src_type": "Assignment",
+                "dst_type": "Assignment",
+                "src": "classes[i] \u003d array[i].getClass()",
+                "dst": "classes[i] \u003d array[i].getClass()",
+                "src_parent_type": "Block",
+                "dst_parent_type": "Block",
+                "src_parent": "{\n    classes[i] \u003d array[i].getClass();\n}",
+                "dst_parent": "{\n    classes[i] \u003d array[i].getClass();\n}"
+              },
+              "line": 910,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang33"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((array[i]) !\u003d null) {\n    classes[i] \u003d array[i].getClass();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if ((array[i]) !\u003d null) {\n        classes[i] \u003d array[i].getClass();\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 910,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang33"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement4",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "MOV",
+              "pattern_entity": {
+                "entity_type": "Assignment",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "MOV",
+                "src_type": "Assignment",
+                "dst_type": "Assignment",
+                "src": "classes[i] \u003d array[i].getClass()",
+                "dst": "classes[i] \u003d array[i].getClass()",
+                "src_parent_type": "Block",
+                "dst_parent_type": "Block",
+                "src_parent": "{\n    classes[i] \u003d array[i].getClass();\n}",
+                "dst_parent": "{\n    classes[i] \u003d array[i].getClass();\n}"
+              },
+              "line": 910,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang33"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((array[i]) !\u003d null) {\n    classes[i] \u003d array[i].getClass();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if ((array[i]) !\u003d null) {\n        classes[i] \u003d array[i].getClass();\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 910,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang33"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:if_null_check",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((array[i]) !\u003d null) {\n    classes[i] \u003d array[i].getClass();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if ((array[i]) !\u003d null) {\n        classes[i] \u003d array[i].getClass();\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 910,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang33"
+            },
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "null",
+                "entity_role": "RightOperand",
+                "entity_parent": {
+                  "entity_type": "BinaryOperator",
+                  "entity_new value": "*",
+                  "entity_role": "condition",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Literal",
+                "dst_type": "null",
+                "src": "null",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(array[i]) !\u003d null",
+                "dst_parent": "null"
+              },
+              "line": 910,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang33"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

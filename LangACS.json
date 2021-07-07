@@ -1,0 +1,577 @@
+{
+  "instances": [
+    {
+      "revision": "Lang24",
+      "repairability": [
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_ins_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "//ACS\u0027s patch end",
+          "instance_detail": [
+            {
+              "pattern_action": "MOV",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Then",
+                "entity_parent": {
+                  "entity_type": "If",
+                  "entity_new value": "*",
+                  "entity_role": "*",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "MOV",
+                "src_type": "Block",
+                "dst_type": "Block",
+                "src": "{\n    return foundDigit \u0026\u0026 (!hasExp);\n}",
+                "dst": "{\n    return false;\n}",
+                "src_parent_type": "If",
+                "dst_parent_type": "If",
+                "src_parent": "if (((chars[i]) \u003d\u003d \u0027l\u0027) || ((chars[i]) \u003d\u003d \u0027L\u0027)) {\n    return foundDigit \u0026\u0026 (!hasExp);\n}",
+                "dst_parent": "if (hasDecPoint \u003d\u003d true) {\n    return false;\n}"
+              },
+              "line": 1411,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang24"
+            },
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (hasDecPoint \u003d\u003d true) {\n    return false;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (hasDecPoint \u003d\u003d true) {\n        return false;\n    }\n    return foundDigit \u0026\u0026 (!hasExp);\n}",
+                "dst_parent": "null"
+              },
+              "line": 1413,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang24"
+            }
+          ]
+        },
+        {
+          "tool-name": "JKali",
+          "pattern-name": "JKali:add_rtrn",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "//ACS\u0027s patch end",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Return",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return false",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    return false;\n}",
+                "dst_parent": "null"
+              },
+              "line": 1413,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang24"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "//ACS\u0027s patch end",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return false",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    return false;\n}",
+                "dst_parent": "null"
+              },
+              "line": 1413,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang24"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement3",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "//ACS\u0027s patch end",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Return",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return false",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    return false;\n}",
+                "dst_parent": "null"
+              },
+              "line": 1413,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang24"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "//ACS\u0027s patch end",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (hasDecPoint \u003d\u003d true) {\n    return false;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (hasDecPoint \u003d\u003d true) {\n        return false;\n    }\n    return foundDigit \u0026\u0026 (!hasExp);\n}",
+                "dst_parent": "null"
+              },
+              "line": 1413,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang24"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:check_length",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "//ACS\u0027s patch end",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (hasDecPoint \u003d\u003d true) {\n    return false;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (hasDecPoint \u003d\u003d true) {\n        return false;\n    }\n    return foundDigit \u0026\u0026 (!hasExp);\n}",
+                "dst_parent": "null"
+              },
+              "line": 1413,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Lang35",
+      "repairability": [
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "//ACS\u0027s patch end",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (element \u003d\u003d null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    java.lang.Class\u003c?\u003e type;\n    if (array !\u003d null) {\n        type \u003d array.getClass();\n    } else\n        if (element !\u003d null) {\n            type \u003d element.getClass();\n        } else {\n            type \u003d java.lang.Object.class;\n        }\n\n    @java.lang.SuppressWarnings(\"unchecked\")\n    T[] newArray \u003d ((T[]) (org.apache.commons.lang3.ArrayUtils.copyArrayGrow1(array, type)));\n    newArray[((newArray.length) - 1)] \u003d element;\n    if (element \u003d\u003d null) {\n        throw new java.lang.IllegalArgumentException();\n    }\n    return newArray;\n}",
+                "dst_parent": "null"
+              },
+              "line": 3301,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang35"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "//ACS\u0027s patch end",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (element \u003d\u003d null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    java.lang.Class\u003c?\u003e type;\n    if (array !\u003d null) {\n        type \u003d array.getClass();\n    } else\n        if (element !\u003d null) {\n            type \u003d element.getClass();\n        } else {\n            type \u003d java.lang.Object.class;\n        }\n\n    @java.lang.SuppressWarnings(\"unchecked\")\n    T[] newArray \u003d ((T[]) (org.apache.commons.lang3.ArrayUtils.copyArrayGrow1(array, type)));\n    newArray[((newArray.length) - 1)] \u003d element;\n    if (element \u003d\u003d null) {\n        throw new java.lang.IllegalArgumentException();\n    }\n    return newArray;\n}",
+                "dst_parent": "null"
+              },
+              "line": 3301,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang35"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:if_null_check",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "//ACS\u0027s patch end",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (element \u003d\u003d null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    java.lang.Class\u003c?\u003e type;\n    if (array !\u003d null) {\n        type \u003d array.getClass();\n    } else\n        if (element !\u003d null) {\n            type \u003d element.getClass();\n        } else {\n            type \u003d java.lang.Object.class;\n        }\n\n    @java.lang.SuppressWarnings(\"unchecked\")\n    T[] newArray \u003d ((T[]) (org.apache.commons.lang3.ArrayUtils.copyArrayGrow1(array, type)));\n    newArray[((newArray.length) - 1)] \u003d element;\n    if (element \u003d\u003d null) {\n        throw new java.lang.IllegalArgumentException();\n    }\n    return newArray;\n}",
+                "dst_parent": "null"
+              },
+              "line": 3301,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang35"
+            },
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "null",
+                "entity_role": "RightOperand",
+                "entity_parent": {
+                  "entity_type": "BinaryOperator",
+                  "entity_new value": "*",
+                  "entity_role": "condition",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Literal",
+                "dst_type": "null",
+                "src": "null",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "element \u003d\u003d null",
+                "dst_parent": "null"
+              },
+              "line": 3301,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang35"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Lang7",
+      "repairability": [
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_ins_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "//ACS\u0027s patch end",
+          "instance_detail": [
+            {
+              "pattern_action": "MOV",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Then",
+                "entity_parent": {
+                  "entity_type": "If",
+                  "entity_new value": "*",
+                  "entity_role": "*",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "MOV",
+                "src_type": "Block",
+                "dst_type": "Block",
+                "src": "{\n    return null;\n}",
+                "dst": "{\n    throw new java.lang.NumberFormatException();\n}",
+                "src_parent_type": "If",
+                "dst_parent_type": "If",
+                "src_parent": "if (str.startsWith(\"--\")) {\n    return null;\n}",
+                "dst_parent": "if ((str.startsWith(\"--\")) \u003d\u003d true) {\n    throw new java.lang.NumberFormatException();\n}"
+              },
+              "line": 452,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang7"
+            },
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((str.startsWith(\"--\")) \u003d\u003d true) {\n    throw new java.lang.NumberFormatException();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if ((str.startsWith(\"--\")) \u003d\u003d true) {\n        throw new java.lang.NumberFormatException();\n    }\n    return null;\n}",
+                "dst_parent": "null"
+              },
+              "line": 454,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang7"
+            }
+          ]
+        },
+        {
+          "tool-name": "JKali",
+          "pattern-name": "JKali:del",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "//ACS\u0027s patch end",
+          "instance_detail": [
+            {
+              "pattern_action": "DEL",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (str.startsWith(\"--\")) {\n    return null;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (str \u003d\u003d null) {\n        return null;\n    }\n    if (org.apache.commons.lang3.StringUtils.isBlank(str)) {\n        throw new java.lang.NumberFormatException(\"A blank string is not a valid number\");\n    }\n    if (str.startsWith(\"--\")) {\n        return null;\n    }\n    if ((((str.startsWith(\"0x\")) || (str.startsWith(\"-0x\"))) || (str.startsWith(\"0X\"))) || (str.startsWith(\"-0X\"))) {\n        int hexDigits \u003d (str.length()) - 2;\n        if (str.startsWith(\"-\")) {\n            hexDigits--;\n        }\n        if (hexDigits \u003e 8) {\n            return org.apache.commons.lang3.math.NumberUtils.createLong(str);\n        }\n        return org.apache.commons.lang3.math.NumberUtils.createInteger(str);\n    }\n    char lastChar \u003d str.charAt(((str.length()) - 1));\n    java.lang.String mant;\n    java.lang.String dec;\n    java.lang.String exp;\n    int decPos \u003d str.indexOf(\u0027.\u0027);\n    int expPos \u003d ((str.indexOf(\u0027e\u0027)) + (str.indexOf(\u0027E\u0027))) + 1;\n    if (decPos \u003e (-1)) {\n        if (expPos \u003e (-1)) {\n            if ((expPos \u003c decPos) || (expPos \u003e (str.length()))) {\n                throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n            }\n            dec \u003d str.substring((decPos + 1), expPos);\n        } else {\n            dec \u003d str.substring((decPos + 1));\n        }\n        mant \u003d str.substring(0, decPos);\n    } else {\n        if (expPos \u003e (-1)) {\n            if (expPos \u003e (str.length())) {\n                throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n            }\n            mant \u003d str.substring(0, expPos);\n        } else {\n            mant \u003d str;\n        }\n        dec \u003d null;\n    }\n    if ((!(java.lang.Character.isDigit(lastChar))) \u0026\u0026 (lastChar !\u003d \u0027.\u0027)) {\n        if ((expPos \u003e (-1)) \u0026\u0026 (expPos \u003c ((str.length()) - 1))) {\n            exp \u003d str.substring((expPos + 1), ((str.length()) - 1));\n        } else {\n            exp \u003d null;\n        }\n        java.lang.String numeric \u003d str.substring(0, ((str.length()) - 1));\n        boolean allZeros \u003d (org.apache.commons.lang3.math.NumberUtils.isAllZeros(mant)) \u0026\u0026 (org.apache.commons.lang3.math.NumberUtils.isAllZeros(exp));\n        switch (lastChar) {\n            case \u0027l\u0027 :\n            case \u0027L\u0027 :\n                if (((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 ((((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) \u0026\u0026 (org.apache.commons.lang3.math.NumberUtils.isDigits(numeric.substring(1)))) || (org.apache.commons.lang3.math.NumberUtils.isDigits(numeric)))) {\n                    try {\n                        return org.apache.commons.lang3.math.NumberUtils.createLong(numeric);\n                    } catch (java.lang.NumberFormatException nfe) {\n                    }\n                    return org.apache.commons.lang3.math.NumberUtils.createBigInteger(numeric);\n                }\n                throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n            case \u0027f\u0027 :\n            case \u0027F\u0027 :\n                try {\n                    java.lang.Float f \u003d org.apache.commons.lang3.math.NumberUtils.createFloat(numeric);\n                    if (!((f.isInfinite()) || (((f.floatValue()) \u003d\u003d 0.0F) \u0026\u0026 (!allZeros)))) {\n                        return f;\n                    }\n                } catch (java.lang.NumberFormatException nfe) {\n                }\n            case \u0027d\u0027 :\n            case \u0027D\u0027 :\n                try {\n                    java.lang.Double d \u003d org.apache.commons.lang3.math.NumberUtils.createDouble(numeric);\n                    if (!((d.isInfinite()) || (((d.floatValue()) \u003d\u003d 0.0) \u0026\u0026 (!allZeros)))) {\n                        return d;\n                    }\n                } catch (java.lang.NumberFormatException nfe) {\n                }\n                try {\n                    return org.apache.commons.lang3.math.NumberUtils.createBigDecimal(numeric);\n                } catch (java.lang.NumberFormatException e) {\n                }\n            default :\n                throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n        }\n    } else {\n        if ((expPos \u003e (-1)) \u0026\u0026 (expPos \u003c ((str.length()) - 1))) {\n            exp \u003d str.substring((expPos + 1), str.length());\n        } else {\n            exp \u003d null;\n        }\n        if ((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) {\n            try {\n                return org.apache.commons.lang3.math.NumberUtils.createInteger(str);\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            try {\n                return org.apache.commons.lang3.math.NumberUtils.createLong(str);\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            return org.apache.commons.lang3.math.NumberUtils.createBigInteger(str);\n        } else {\n            boolean allZeros \u003d (org.apache.commons.lang3.math.NumberUtils.isAllZeros(mant)) \u0026\u0026 (org.apache.commons.lang3.math.NumberUtils.isAllZeros(exp));\n            try {\n                java.lang.Float f \u003d org.apache.commons.lang3.math.NumberUtils.createFloat(str);\n                if (!((f.isInfinite()) || (((f.floatValue()) \u003d\u003d 0.0F) \u0026\u0026 (!allZeros)))) {\n                    return f;\n                }\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            try {\n                java.lang.Double d \u003d org.apache.commons.lang3.math.NumberUtils.createDouble(str);\n                if (!((d.isInfinite()) || (((d.doubleValue()) \u003d\u003d 0.0) \u0026\u0026 (!allZeros)))) {\n                    return d;\n                }\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            return org.apache.commons.lang3.math.NumberUtils.createBigDecimal(str);\n        }\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 452,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang7"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "//ACS\u0027s patch end",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (str.startsWith(\"--\")) {\n    return null;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (str \u003d\u003d null) {\n        return null;\n    }\n    if (org.apache.commons.lang3.StringUtils.isBlank(str)) {\n        throw new java.lang.NumberFormatException(\"A blank string is not a valid number\");\n    }\n    if (str.startsWith(\"--\")) {\n        return null;\n    }\n    if ((((str.startsWith(\"0x\")) || (str.startsWith(\"-0x\"))) || (str.startsWith(\"0X\"))) || (str.startsWith(\"-0X\"))) {\n        int hexDigits \u003d (str.length()) - 2;\n        if (str.startsWith(\"-\")) {\n            hexDigits--;\n        }\n        if (hexDigits \u003e 8) {\n            return org.apache.commons.lang3.math.NumberUtils.createLong(str);\n        }\n        return org.apache.commons.lang3.math.NumberUtils.createInteger(str);\n    }\n    char lastChar \u003d str.charAt(((str.length()) - 1));\n    java.lang.String mant;\n    java.lang.String dec;\n    java.lang.String exp;\n    int decPos \u003d str.indexOf(\u0027.\u0027);\n    int expPos \u003d ((str.indexOf(\u0027e\u0027)) + (str.indexOf(\u0027E\u0027))) + 1;\n    if (decPos \u003e (-1)) {\n        if (expPos \u003e (-1)) {\n            if ((expPos \u003c decPos) || (expPos \u003e (str.length()))) {\n                throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n            }\n            dec \u003d str.substring((decPos + 1), expPos);\n        } else {\n            dec \u003d str.substring((decPos + 1));\n        }\n        mant \u003d str.substring(0, decPos);\n    } else {\n        if (expPos \u003e (-1)) {\n            if (expPos \u003e (str.length())) {\n                throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n            }\n            mant \u003d str.substring(0, expPos);\n        } else {\n            mant \u003d str;\n        }\n        dec \u003d null;\n    }\n    if ((!(java.lang.Character.isDigit(lastChar))) \u0026\u0026 (lastChar !\u003d \u0027.\u0027)) {\n        if ((expPos \u003e (-1)) \u0026\u0026 (expPos \u003c ((str.length()) - 1))) {\n            exp \u003d str.substring((expPos + 1), ((str.length()) - 1));\n        } else {\n            exp \u003d null;\n        }\n        java.lang.String numeric \u003d str.substring(0, ((str.length()) - 1));\n        boolean allZeros \u003d (org.apache.commons.lang3.math.NumberUtils.isAllZeros(mant)) \u0026\u0026 (org.apache.commons.lang3.math.NumberUtils.isAllZeros(exp));\n        switch (lastChar) {\n            case \u0027l\u0027 :\n            case \u0027L\u0027 :\n                if (((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 ((((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) \u0026\u0026 (org.apache.commons.lang3.math.NumberUtils.isDigits(numeric.substring(1)))) || (org.apache.commons.lang3.math.NumberUtils.isDigits(numeric)))) {\n                    try {\n                        return org.apache.commons.lang3.math.NumberUtils.createLong(numeric);\n                    } catch (java.lang.NumberFormatException nfe) {\n                    }\n                    return org.apache.commons.lang3.math.NumberUtils.createBigInteger(numeric);\n                }\n                throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n            case \u0027f\u0027 :\n            case \u0027F\u0027 :\n                try {\n                    java.lang.Float f \u003d org.apache.commons.lang3.math.NumberUtils.createFloat(numeric);\n                    if (!((f.isInfinite()) || (((f.floatValue()) \u003d\u003d 0.0F) \u0026\u0026 (!allZeros)))) {\n                        return f;\n                    }\n                } catch (java.lang.NumberFormatException nfe) {\n                }\n            case \u0027d\u0027 :\n            case \u0027D\u0027 :\n                try {\n                    java.lang.Double d \u003d org.apache.commons.lang3.math.NumberUtils.createDouble(numeric);\n                    if (!((d.isInfinite()) || (((d.floatValue()) \u003d\u003d 0.0) \u0026\u0026 (!allZeros)))) {\n                        return d;\n                    }\n                } catch (java.lang.NumberFormatException nfe) {\n                }\n                try {\n                    return org.apache.commons.lang3.math.NumberUtils.createBigDecimal(numeric);\n                } catch (java.lang.NumberFormatException e) {\n                }\n            default :\n                throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n        }\n    } else {\n        if ((expPos \u003e (-1)) \u0026\u0026 (expPos \u003c ((str.length()) - 1))) {\n            exp \u003d str.substring((expPos + 1), str.length());\n        } else {\n            exp \u003d null;\n        }\n        if ((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) {\n            try {\n                return org.apache.commons.lang3.math.NumberUtils.createInteger(str);\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            try {\n                return org.apache.commons.lang3.math.NumberUtils.createLong(str);\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            return org.apache.commons.lang3.math.NumberUtils.createBigInteger(str);\n        } else {\n            boolean allZeros \u003d (org.apache.commons.lang3.math.NumberUtils.isAllZeros(mant)) \u0026\u0026 (org.apache.commons.lang3.math.NumberUtils.isAllZeros(exp));\n            try {\n                java.lang.Float f \u003d org.apache.commons.lang3.math.NumberUtils.createFloat(str);\n                if (!((f.isInfinite()) || (((f.floatValue()) \u003d\u003d 0.0F) \u0026\u0026 (!allZeros)))) {\n                    return f;\n                }\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            try {\n                java.lang.Double d \u003d org.apache.commons.lang3.math.NumberUtils.createDouble(str);\n                if (!((d.isInfinite()) || (((d.doubleValue()) \u003d\u003d 0.0) \u0026\u0026 (!allZeros)))) {\n                    return d;\n                }\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            return org.apache.commons.lang3.math.NumberUtils.createBigDecimal(str);\n        }\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 452,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang7"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement8",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "//ACS\u0027s patch end",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Invocation",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "(str.startsWith(\"--\"))",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(str.startsWith(\"--\")) \u003d\u003d true",
+                "dst_parent": "null"
+              },
+              "line": 454,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang7"
+            },
+            {
+              "pattern_action": "DEL",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (str.startsWith(\"--\")) {\n    return null;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (str \u003d\u003d null) {\n        return null;\n    }\n    if (org.apache.commons.lang3.StringUtils.isBlank(str)) {\n        throw new java.lang.NumberFormatException(\"A blank string is not a valid number\");\n    }\n    if (str.startsWith(\"--\")) {\n        return null;\n    }\n    if ((((str.startsWith(\"0x\")) || (str.startsWith(\"-0x\"))) || (str.startsWith(\"0X\"))) || (str.startsWith(\"-0X\"))) {\n        int hexDigits \u003d (str.length()) - 2;\n        if (str.startsWith(\"-\")) {\n            hexDigits--;\n        }\n        if (hexDigits \u003e 8) {\n            return org.apache.commons.lang3.math.NumberUtils.createLong(str);\n        }\n        return org.apache.commons.lang3.math.NumberUtils.createInteger(str);\n    }\n    char lastChar \u003d str.charAt(((str.length()) - 1));\n    java.lang.String mant;\n    java.lang.String dec;\n    java.lang.String exp;\n    int decPos \u003d str.indexOf(\u0027.\u0027);\n    int expPos \u003d ((str.indexOf(\u0027e\u0027)) + (str.indexOf(\u0027E\u0027))) + 1;\n    if (decPos \u003e (-1)) {\n        if (expPos \u003e (-1)) {\n            if ((expPos \u003c decPos) || (expPos \u003e (str.length()))) {\n                throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n            }\n            dec \u003d str.substring((decPos + 1), expPos);\n        } else {\n            dec \u003d str.substring((decPos + 1));\n        }\n        mant \u003d str.substring(0, decPos);\n    } else {\n        if (expPos \u003e (-1)) {\n            if (expPos \u003e (str.length())) {\n                throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n            }\n            mant \u003d str.substring(0, expPos);\n        } else {\n            mant \u003d str;\n        }\n        dec \u003d null;\n    }\n    if ((!(java.lang.Character.isDigit(lastChar))) \u0026\u0026 (lastChar !\u003d \u0027.\u0027)) {\n        if ((expPos \u003e (-1)) \u0026\u0026 (expPos \u003c ((str.length()) - 1))) {\n            exp \u003d str.substring((expPos + 1), ((str.length()) - 1));\n        } else {\n            exp \u003d null;\n        }\n        java.lang.String numeric \u003d str.substring(0, ((str.length()) - 1));\n        boolean allZeros \u003d (org.apache.commons.lang3.math.NumberUtils.isAllZeros(mant)) \u0026\u0026 (org.apache.commons.lang3.math.NumberUtils.isAllZeros(exp));\n        switch (lastChar) {\n            case \u0027l\u0027 :\n            case \u0027L\u0027 :\n                if (((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 ((((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) \u0026\u0026 (org.apache.commons.lang3.math.NumberUtils.isDigits(numeric.substring(1)))) || (org.apache.commons.lang3.math.NumberUtils.isDigits(numeric)))) {\n                    try {\n                        return org.apache.commons.lang3.math.NumberUtils.createLong(numeric);\n                    } catch (java.lang.NumberFormatException nfe) {\n                    }\n                    return org.apache.commons.lang3.math.NumberUtils.createBigInteger(numeric);\n                }\n                throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n            case \u0027f\u0027 :\n            case \u0027F\u0027 :\n                try {\n                    java.lang.Float f \u003d org.apache.commons.lang3.math.NumberUtils.createFloat(numeric);\n                    if (!((f.isInfinite()) || (((f.floatValue()) \u003d\u003d 0.0F) \u0026\u0026 (!allZeros)))) {\n                        return f;\n                    }\n                } catch (java.lang.NumberFormatException nfe) {\n                }\n            case \u0027d\u0027 :\n            case \u0027D\u0027 :\n                try {\n                    java.lang.Double d \u003d org.apache.commons.lang3.math.NumberUtils.createDouble(numeric);\n                    if (!((d.isInfinite()) || (((d.floatValue()) \u003d\u003d 0.0) \u0026\u0026 (!allZeros)))) {\n                        return d;\n                    }\n                } catch (java.lang.NumberFormatException nfe) {\n                }\n                try {\n                    return org.apache.commons.lang3.math.NumberUtils.createBigDecimal(numeric);\n                } catch (java.lang.NumberFormatException e) {\n                }\n            default :\n                throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n        }\n    } else {\n        if ((expPos \u003e (-1)) \u0026\u0026 (expPos \u003c ((str.length()) - 1))) {\n            exp \u003d str.substring((expPos + 1), str.length());\n        } else {\n            exp \u003d null;\n        }\n        if ((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) {\n            try {\n                return org.apache.commons.lang3.math.NumberUtils.createInteger(str);\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            try {\n                return org.apache.commons.lang3.math.NumberUtils.createLong(str);\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            return org.apache.commons.lang3.math.NumberUtils.createBigInteger(str);\n        } else {\n            boolean allZeros \u003d (org.apache.commons.lang3.math.NumberUtils.isAllZeros(mant)) \u0026\u0026 (org.apache.commons.lang3.math.NumberUtils.isAllZeros(exp));\n            try {\n                java.lang.Float f \u003d org.apache.commons.lang3.math.NumberUtils.createFloat(str);\n                if (!((f.isInfinite()) || (((f.floatValue()) \u003d\u003d 0.0F) \u0026\u0026 (!allZeros)))) {\n                    return f;\n                }\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            try {\n                java.lang.Double d \u003d org.apache.commons.lang3.math.NumberUtils.createDouble(str);\n                if (!((d.isInfinite()) || (((d.doubleValue()) \u003d\u003d 0.0) \u0026\u0026 (!allZeros)))) {\n                    return d;\n                }\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            return org.apache.commons.lang3.math.NumberUtils.createBigDecimal(str);\n        }\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 452,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang7"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "//ACS\u0027s patch end",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (str.startsWith(\"--\")) {\n    if ((str.startsWith(\"--\")) \u003d\u003d true) {\n        throw new java.lang.NumberFormatException();\n    }\n    return null;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (str \u003d\u003d null) {\n        return null;\n    }\n    if (org.apache.commons.lang3.StringUtils.isBlank(str)) {\n        throw new java.lang.NumberFormatException(\"A blank string is not a valid number\");\n    }\n    if (str.startsWith(\"--\")) {\n        if ((str.startsWith(\"--\")) \u003d\u003d true) {\n            throw new java.lang.NumberFormatException();\n        }\n        return null;\n    }\n    if ((((str.startsWith(\"0x\")) || (str.startsWith(\"-0x\"))) || (str.startsWith(\"0X\"))) || (str.startsWith(\"-0X\"))) {\n        int hexDigits \u003d (str.length()) - 2;\n        if (str.startsWith(\"-\")) {\n            hexDigits--;\n        }\n        if (hexDigits \u003e 8) {\n            return org.apache.commons.lang3.math.NumberUtils.createLong(str);\n        }\n        return org.apache.commons.lang3.math.NumberUtils.createInteger(str);\n    }\n    char lastChar \u003d str.charAt(((str.length()) - 1));\n    java.lang.String mant;\n    java.lang.String dec;\n    java.lang.String exp;\n    int decPos \u003d str.indexOf(\u0027.\u0027);\n    int expPos \u003d ((str.indexOf(\u0027e\u0027)) + (str.indexOf(\u0027E\u0027))) + 1;\n    if (decPos \u003e (-1)) {\n        if (expPos \u003e (-1)) {\n            if ((expPos \u003c decPos) || (expPos \u003e (str.length()))) {\n                throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n            }\n            dec \u003d str.substring((decPos + 1), expPos);\n        } else {\n            dec \u003d str.substring((decPos + 1));\n        }\n        mant \u003d str.substring(0, decPos);\n    } else {\n        if (expPos \u003e (-1)) {\n            if (expPos \u003e (str.length())) {\n                throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n            }\n            mant \u003d str.substring(0, expPos);\n        } else {\n            mant \u003d str;\n        }\n        dec \u003d null;\n    }\n    if ((!(java.lang.Character.isDigit(lastChar))) \u0026\u0026 (lastChar !\u003d \u0027.\u0027)) {\n        if ((expPos \u003e (-1)) \u0026\u0026 (expPos \u003c ((str.length()) - 1))) {\n            exp \u003d str.substring((expPos + 1), ((str.length()) - 1));\n        } else {\n            exp \u003d null;\n        }\n        java.lang.String numeric \u003d str.substring(0, ((str.length()) - 1));\n        boolean allZeros \u003d (org.apache.commons.lang3.math.NumberUtils.isAllZeros(mant)) \u0026\u0026 (org.apache.commons.lang3.math.NumberUtils.isAllZeros(exp));\n        switch (lastChar) {\n            case \u0027l\u0027 :\n            case \u0027L\u0027 :\n                if (((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) \u0026\u0026 ((((numeric.charAt(0)) \u003d\u003d \u0027-\u0027) \u0026\u0026 (org.apache.commons.lang3.math.NumberUtils.isDigits(numeric.substring(1)))) || (org.apache.commons.lang3.math.NumberUtils.isDigits(numeric)))) {\n                    try {\n                        return org.apache.commons.lang3.math.NumberUtils.createLong(numeric);\n                    } catch (java.lang.NumberFormatException nfe) {\n                    }\n                    return org.apache.commons.lang3.math.NumberUtils.createBigInteger(numeric);\n                }\n                throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n            case \u0027f\u0027 :\n            case \u0027F\u0027 :\n                try {\n                    java.lang.Float f \u003d org.apache.commons.lang3.math.NumberUtils.createFloat(numeric);\n                    if (!((f.isInfinite()) || (((f.floatValue()) \u003d\u003d 0.0F) \u0026\u0026 (!allZeros)))) {\n                        return f;\n                    }\n                } catch (java.lang.NumberFormatException nfe) {\n                }\n            case \u0027d\u0027 :\n            case \u0027D\u0027 :\n                try {\n                    java.lang.Double d \u003d org.apache.commons.lang3.math.NumberUtils.createDouble(numeric);\n                    if (!((d.isInfinite()) || (((d.floatValue()) \u003d\u003d 0.0) \u0026\u0026 (!allZeros)))) {\n                        return d;\n                    }\n                } catch (java.lang.NumberFormatException nfe) {\n                }\n                try {\n                    return org.apache.commons.lang3.math.NumberUtils.createBigDecimal(numeric);\n                } catch (java.lang.NumberFormatException e) {\n                }\n            default :\n                throw new java.lang.NumberFormatException((str + \" is not a valid number.\"));\n        }\n    } else {\n        if ((expPos \u003e (-1)) \u0026\u0026 (expPos \u003c ((str.length()) - 1))) {\n            exp \u003d str.substring((expPos + 1), str.length());\n        } else {\n            exp \u003d null;\n        }\n        if ((dec \u003d\u003d null) \u0026\u0026 (exp \u003d\u003d null)) {\n            try {\n                return org.apache.commons.lang3.math.NumberUtils.createInteger(str);\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            try {\n                return org.apache.commons.lang3.math.NumberUtils.createLong(str);\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            return org.apache.commons.lang3.math.NumberUtils.createBigInteger(str);\n        } else {\n            boolean allZeros \u003d (org.apache.commons.lang3.math.NumberUtils.isAllZeros(mant)) \u0026\u0026 (org.apache.commons.lang3.math.NumberUtils.isAllZeros(exp));\n            try {\n                java.lang.Float f \u003d org.apache.commons.lang3.math.NumberUtils.createFloat(str);\n                if (!((f.isInfinite()) || (((f.floatValue()) \u003d\u003d 0.0F) \u0026\u0026 (!allZeros)))) {\n                    return f;\n                }\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            try {\n                java.lang.Double d \u003d org.apache.commons.lang3.math.NumberUtils.createDouble(str);\n                if (!((d.isInfinite()) || (((d.doubleValue()) \u003d\u003d 0.0) \u0026\u0026 (!allZeros)))) {\n                    return d;\n                }\n            } catch (java.lang.NumberFormatException nfe) {\n            }\n            return org.apache.commons.lang3.math.NumberUtils.createBigDecimal(str);\n        }\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 452,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang7"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:Insert_Invocation",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "//ACS\u0027s patch end",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Invocation",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "(str.startsWith(\"--\"))",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "(str.startsWith(\"--\")) \u003d\u003d true",
+                "dst_parent": "null"
+              },
+              "line": 454,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang7"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

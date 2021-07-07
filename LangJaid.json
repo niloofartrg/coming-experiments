@@ -1,0 +1,691 @@
+{
+  "instances": [
+    {
+      "revision": "Lang33",
+      "repairability": [
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "",
+          "CHANGE_new:": "                classes[i]\u003darray[i].getClass();",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (((array[i]) \u003d\u003d (classes[i])) \u003d\u003d true) {\n    classes[i] \u003d null;\n} else {\n    classes[i] \u003d array[i].getClass();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (((array[i]) \u003d\u003d (classes[i])) \u003d\u003d true) {\n        classes[i] \u003d null;\n    } else {\n        classes[i] \u003d array[i].getClass();\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 910,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang33"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement1",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "",
+          "CHANGE_new:": "                classes[i]\u003darray[i].getClass();",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Assignment",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Assignment",
+                "dst_type": "null",
+                "src": "classes[i] \u003d null",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    classes[i] \u003d null;\n}",
+                "dst_parent": "null"
+              },
+              "line": 911,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang33"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "",
+          "CHANGE_new:": "                classes[i]\u003darray[i].getClass();",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (((array[i]) \u003d\u003d (classes[i])) \u003d\u003d true) {\n    classes[i] \u003d null;\n} else {\n    classes[i] \u003d array[i].getClass();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (((array[i]) \u003d\u003d (classes[i])) \u003d\u003d true) {\n        classes[i] \u003d null;\n    } else {\n        classes[i] \u003d array[i].getClass();\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 910,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang33"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:check_length",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "",
+          "CHANGE_new:": "                classes[i]\u003darray[i].getClass();",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (((array[i]) \u003d\u003d (classes[i])) \u003d\u003d true) {\n    classes[i] \u003d null;\n} else {\n    classes[i] \u003d array[i].getClass();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (((array[i]) \u003d\u003d (classes[i])) \u003d\u003d true) {\n        classes[i] \u003d null;\n    } else {\n        classes[i] \u003d array[i].getClass();\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 910,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang33"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Lang38",
+      "repairability": [
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_ins_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "            }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((null \u003d\u003d calendar) \u003d\u003d false) {\n    calendar.getTime();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if ((null \u003d\u003d calendar) \u003d\u003d false) {\n        calendar.getTime();\n    }\n    calendar \u003d ((java.util.Calendar) (calendar.clone()));\n    calendar.setTimeZone(mTimeZone);\n}",
+                "dst_parent": "null"
+              },
+              "line": 872,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang38"
+            },
+            {
+              "pattern_action": "MOV",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Then",
+                "entity_parent": {
+                  "entity_type": "If",
+                  "entity_new value": "*",
+                  "entity_role": "*",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "MOV",
+                "src_type": "Block",
+                "dst_type": "Block",
+                "src": "{\n    calendar \u003d ((java.util.Calendar) (calendar.clone()));\n    calendar.setTimeZone(mTimeZone);\n}",
+                "dst": "{\n    calendar.getTime();\n}",
+                "src_parent_type": "If",
+                "dst_parent_type": "If",
+                "src_parent": "if (mTimeZoneForced) {\n    calendar \u003d ((java.util.Calendar) (calendar.clone()));\n    calendar.setTimeZone(mTimeZone);\n}",
+                "dst_parent": "if ((null \u003d\u003d calendar) \u003d\u003d false) {\n    calendar.getTime();\n}"
+              },
+              "line": 871,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang38"
+            }
+          ]
+        },
+        {
+          "tool-name": "JKali",
+          "pattern-name": "JKali:del",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "            }",
+          "instance_detail": [
+            {
+              "pattern_action": "DEL",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (mTimeZoneForced) {\n    calendar \u003d ((java.util.Calendar) (calendar.clone()));\n    calendar.setTimeZone(mTimeZone);\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (mTimeZoneForced) {\n        calendar \u003d ((java.util.Calendar) (calendar.clone()));\n        calendar.setTimeZone(mTimeZone);\n    }\n    return applyRules(calendar, buf);\n}",
+                "dst_parent": "null"
+              },
+              "line": 871,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang38"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "            }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (mTimeZoneForced) {\n    if ((null \u003d\u003d calendar) \u003d\u003d false) {\n        calendar.getTime();\n    }\n    calendar \u003d ((java.util.Calendar) (calendar.clone()));\n    calendar.setTimeZone(mTimeZone);\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (mTimeZoneForced) {\n        if ((null \u003d\u003d calendar) \u003d\u003d false) {\n            calendar.getTime();\n        }\n        calendar \u003d ((java.util.Calendar) (calendar.clone()));\n        calendar.setTimeZone(mTimeZone);\n    }\n    return applyRules(calendar, buf);\n}",
+                "dst_parent": "null"
+              },
+              "line": 871,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang38"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement4",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "            }",
+          "instance_detail": [
+            {
+              "pattern_action": "MOV",
+              "pattern_entity": {
+                "entity_type": "Assignment",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "MOV",
+                "src_type": "Assignment",
+                "dst_type": "Assignment",
+                "src": "calendar \u003d ((java.util.Calendar) (calendar.clone()))",
+                "dst": "calendar \u003d ((java.util.Calendar) (calendar.clone()))",
+                "src_parent_type": "Block",
+                "dst_parent_type": "Block",
+                "src_parent": "{\n    calendar \u003d ((java.util.Calendar) (calendar.clone()));\n    calendar.setTimeZone(mTimeZone);\n}",
+                "dst_parent": "{\n    if ((null \u003d\u003d calendar) \u003d\u003d false) {\n        calendar.getTime();\n    }\n    calendar \u003d ((java.util.Calendar) (calendar.clone()));\n    calendar.setTimeZone(mTimeZone);\n}"
+              },
+              "line": 872,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang38"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "            }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (mTimeZoneForced) {\n    if ((null \u003d\u003d calendar) \u003d\u003d false) {\n        calendar.getTime();\n    }\n    calendar \u003d ((java.util.Calendar) (calendar.clone()));\n    calendar.setTimeZone(mTimeZone);\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (mTimeZoneForced) {\n        if ((null \u003d\u003d calendar) \u003d\u003d false) {\n            calendar.getTime();\n        }\n        calendar \u003d ((java.util.Calendar) (calendar.clone()));\n        calendar.setTimeZone(mTimeZone);\n    }\n    return applyRules(calendar, buf);\n}",
+                "dst_parent": "null"
+              },
+              "line": 871,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang38"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:Insert_Invocation",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "            }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Invocation",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "calendar.getTime()",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    calendar.getTime();\n}",
+                "dst_parent": "null"
+              },
+              "line": 873,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang38"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Lang51",
+      "repairability": [
+        {
+          "tool-name": "JKali",
+          "pattern-name": "JKali:add_rtrn",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                    }\r",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Return",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return str \u003d\u003d null",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    return str \u003d\u003d null;\n}",
+                "dst_parent": "null"
+              },
+              "line": 673,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang51"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                    }\r",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (((ch \u003d\u003d \u0027Y\u0027) || (ch \u003d\u003d \u0027y\u0027)) \u003d\u003d false) {\n    return str \u003d\u003d null;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    char ch \u003d str.charAt(0);\n    if (((ch \u003d\u003d \u0027Y\u0027) || (ch \u003d\u003d \u0027y\u0027)) \u003d\u003d false) {\n        return str \u003d\u003d null;\n    }\n    if (ch \u003d\u003d \u0027y\u0027) {\n        return (((str.charAt(1)) \u003d\u003d \u0027e\u0027) || ((str.charAt(1)) \u003d\u003d \u0027E\u0027)) \u0026\u0026 (((str.charAt(2)) \u003d\u003d \u0027s\u0027) || ((str.charAt(2)) \u003d\u003d \u0027S\u0027));\n    }\n    if (ch \u003d\u003d \u0027Y\u0027) {\n        return (((str.charAt(1)) \u003d\u003d \u0027E\u0027) || ((str.charAt(1)) \u003d\u003d \u0027e\u0027)) \u0026\u0026 (((str.charAt(2)) \u003d\u003d \u0027S\u0027) || ((str.charAt(2)) \u003d\u003d \u0027s\u0027));\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 672,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang51"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement3",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                    }\r",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Return",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return str \u003d\u003d null",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    return str \u003d\u003d null;\n}",
+                "dst_parent": "null"
+              },
+              "line": 673,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang51"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                    }\r",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (((ch \u003d\u003d \u0027Y\u0027) || (ch \u003d\u003d \u0027y\u0027)) \u003d\u003d false) {\n    return str \u003d\u003d null;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    char ch \u003d str.charAt(0);\n    if (((ch \u003d\u003d \u0027Y\u0027) || (ch \u003d\u003d \u0027y\u0027)) \u003d\u003d false) {\n        return str \u003d\u003d null;\n    }\n    if (ch \u003d\u003d \u0027y\u0027) {\n        return (((str.charAt(1)) \u003d\u003d \u0027e\u0027) || ((str.charAt(1)) \u003d\u003d \u0027E\u0027)) \u0026\u0026 (((str.charAt(2)) \u003d\u003d \u0027s\u0027) || ((str.charAt(2)) \u003d\u003d \u0027S\u0027));\n    }\n    if (ch \u003d\u003d \u0027Y\u0027) {\n        return (((str.charAt(1)) \u003d\u003d \u0027E\u0027) || ((str.charAt(1)) \u003d\u003d \u0027e\u0027)) \u0026\u0026 (((str.charAt(2)) \u003d\u003d \u0027S\u0027) || ((str.charAt(2)) \u003d\u003d \u0027s\u0027));\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 672,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang51"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:check_length",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                    }\r",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (((ch \u003d\u003d \u0027Y\u0027) || (ch \u003d\u003d \u0027y\u0027)) \u003d\u003d false) {\n    return str \u003d\u003d null;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    char ch \u003d str.charAt(0);\n    if (((ch \u003d\u003d \u0027Y\u0027) || (ch \u003d\u003d \u0027y\u0027)) \u003d\u003d false) {\n        return str \u003d\u003d null;\n    }\n    if (ch \u003d\u003d \u0027y\u0027) {\n        return (((str.charAt(1)) \u003d\u003d \u0027e\u0027) || ((str.charAt(1)) \u003d\u003d \u0027E\u0027)) \u0026\u0026 (((str.charAt(2)) \u003d\u003d \u0027s\u0027) || ((str.charAt(2)) \u003d\u003d \u0027S\u0027));\n    }\n    if (ch \u003d\u003d \u0027Y\u0027) {\n        return (((str.charAt(1)) \u003d\u003d \u0027E\u0027) || ((str.charAt(1)) \u003d\u003d \u0027e\u0027)) \u0026\u0026 (((str.charAt(2)) \u003d\u003d \u0027S\u0027) || ((str.charAt(2)) \u003d\u003d \u0027s\u0027));\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 672,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang51"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Lang55",
+      "repairability": [
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_ins_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "MOV",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Then",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "MOV",
+                "src_type": "Assignment",
+                "dst_type": "Assignment",
+                "src": "stopTime \u003d java.lang.System.currentTimeMillis()",
+                "dst": "stopTime \u003d java.lang.System.currentTimeMillis()",
+                "src_parent_type": "Block",
+                "dst_parent_type": "Block",
+                "src_parent": "{\n    if (((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_RUNNING)) \u0026\u0026 ((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_SUSPENDED))) {\n        throw new java.lang.IllegalStateException(\"Stopwatch is not running. \");\n    }\n    stopTime \u003d java.lang.System.currentTimeMillis();\n    this.runningState \u003d org.apache.commons.lang.time.StopWatch.STATE_STOPPED;\n}",
+                "dst_parent": "{\n    stopTime \u003d java.lang.System.currentTimeMillis();\n}"
+              },
+              "line": 118,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang55"
+            },
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (!(((this.runningState) \u003d\u003d 1) \u003d\u003d false)) {\n    stopTime \u003d java.lang.System.currentTimeMillis();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_RUNNING)) \u0026\u0026 ((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_SUSPENDED))) {\n        throw new java.lang.IllegalStateException(\"Stopwatch is not running. \");\n    }\n    if (!(((this.runningState) \u003d\u003d 1) \u003d\u003d false)) {\n        stopTime \u003d java.lang.System.currentTimeMillis();\n    }\n    this.runningState \u003d org.apache.commons.lang.time.StopWatch.STATE_STOPPED;\n}",
+                "dst_parent": "null"
+              },
+              "line": 118,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang55"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (!(((this.runningState) \u003d\u003d 1) \u003d\u003d false)) {\n    stopTime \u003d java.lang.System.currentTimeMillis();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_RUNNING)) \u0026\u0026 ((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_SUSPENDED))) {\n        throw new java.lang.IllegalStateException(\"Stopwatch is not running. \");\n    }\n    if (!(((this.runningState) \u003d\u003d 1) \u003d\u003d false)) {\n        stopTime \u003d java.lang.System.currentTimeMillis();\n    }\n    this.runningState \u003d org.apache.commons.lang.time.StopWatch.STATE_STOPPED;\n}",
+                "dst_parent": "null"
+              },
+              "line": 118,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang55"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement4",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "MOV",
+              "pattern_entity": {
+                "entity_type": "Assignment",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "MOV",
+                "src_type": "Assignment",
+                "dst_type": "Assignment",
+                "src": "stopTime \u003d java.lang.System.currentTimeMillis()",
+                "dst": "stopTime \u003d java.lang.System.currentTimeMillis()",
+                "src_parent_type": "Block",
+                "dst_parent_type": "Block",
+                "src_parent": "{\n    if (((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_RUNNING)) \u0026\u0026 ((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_SUSPENDED))) {\n        throw new java.lang.IllegalStateException(\"Stopwatch is not running. \");\n    }\n    stopTime \u003d java.lang.System.currentTimeMillis();\n    this.runningState \u003d org.apache.commons.lang.time.StopWatch.STATE_STOPPED;\n}",
+                "dst_parent": "{\n    stopTime \u003d java.lang.System.currentTimeMillis();\n}"
+              },
+              "line": 118,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang55"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (!(((this.runningState) \u003d\u003d 1) \u003d\u003d false)) {\n    stopTime \u003d java.lang.System.currentTimeMillis();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_RUNNING)) \u0026\u0026 ((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_SUSPENDED))) {\n        throw new java.lang.IllegalStateException(\"Stopwatch is not running. \");\n    }\n    if (!(((this.runningState) \u003d\u003d 1) \u003d\u003d false)) {\n        stopTime \u003d java.lang.System.currentTimeMillis();\n    }\n    this.runningState \u003d org.apache.commons.lang.time.StopWatch.STATE_STOPPED;\n}",
+                "dst_parent": "null"
+              },
+              "line": 118,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang55"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:check_length",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "        }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (!(((this.runningState) \u003d\u003d 1) \u003d\u003d false)) {\n    stopTime \u003d java.lang.System.currentTimeMillis();\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_RUNNING)) \u0026\u0026 ((this.runningState) !\u003d (org.apache.commons.lang.time.StopWatch.STATE_SUSPENDED))) {\n        throw new java.lang.IllegalStateException(\"Stopwatch is not running. \");\n    }\n    if (!(((this.runningState) \u003d\u003d 1) \u003d\u003d false)) {\n        stopTime \u003d java.lang.System.currentTimeMillis();\n    }\n    this.runningState \u003d org.apache.commons.lang.time.StopWatch.STATE_STOPPED;\n}",
+                "dst_parent": "null"
+              },
+              "line": 118,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang55"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

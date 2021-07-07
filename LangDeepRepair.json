@@ -1,0 +1,687 @@
+{
+  "instances": [
+    {
+      "revision": "Lang10",
+      "repairability": [
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "                    regex.append(\"\\\\s*+\");",
+          "CHANGE_new:": "                    regex.append(c);",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "VariableRead",
+                "dst_type": "null",
+                "src": "c",
+                "dst": "null",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "null",
+                "src_parent": "regex.append(c)",
+                "dst_parent": "null"
+              },
+              "line": 310,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang10"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement9",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "                    regex.append(\"\\\\s*+\");",
+          "CHANGE_new:": "                    regex.append(c);",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "VariableRead",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "VariableRead",
+                "dst_type": "null",
+                "src": "c",
+                "dst": "null",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "null",
+                "src_parent": "regex.append(c)",
+                "dst_parent": "null"
+              },
+              "line": 310,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang10"
+            },
+            {
+              "pattern_action": "DEL",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "Literal",
+                "dst_type": "null",
+                "src": "\"\\\\s*+\"",
+                "dst": "null",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "null",
+                "src_parent": "regex.append(\"\\\\s*+\")",
+                "dst_parent": "null"
+              },
+              "line": 310,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang10"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "                    regex.append(\"\\\\s*+\");",
+          "CHANGE_new:": "                    regex.append(c);",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "VariableRead",
+                "dst_type": "null",
+                "src": "c",
+                "dst": "null",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "null",
+                "src_parent": "regex.append(c)",
+                "dst_parent": "null"
+              },
+              "line": 310,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Lang22",
+      "repairability": [
+        {
+          "tool-name": "JMutRepair",
+          "pattern-name": "JMutRepair:unary",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return 1;",
+          "CHANGE_new:": "            v \u003d -v;",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "UnaryOperator",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "UnaryOperator",
+                "dst_type": "null",
+                "src": "-v",
+                "dst": "null",
+                "src_parent_type": "Assignment",
+                "dst_parent_type": "null",
+                "src_parent": "v \u003d -v",
+                "dst_parent": "null"
+              },
+              "line": 585,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang22"
+            }
+          ]
+        },
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_upd_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return 1;",
+          "CHANGE_new:": "            v \u003d -v;",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "condition",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "VariableRead",
+                "dst_type": "null",
+                "src": "v",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "v \u003e 0",
+                "dst_parent": "null"
+              },
+              "line": 584,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang22"
+            }
+          ]
+        },
+        {
+          "tool-name": "JKali",
+          "pattern-name": "JKali:del",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return 1;",
+          "CHANGE_new:": "            v \u003d -v;",
+          "instance_detail": [
+            {
+              "pattern_action": "DEL",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return 1",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    return 1;\n}",
+                "dst_parent": "null"
+              },
+              "line": 585,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang22"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return 1;",
+          "CHANGE_new:": "            v \u003d -v;",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return 1",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    return 1;\n}",
+                "dst_parent": "null"
+              },
+              "line": 585,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang22"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement1",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return 1;",
+          "CHANGE_new:": "            v \u003d -v;",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Assignment",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Assignment",
+                "dst_type": "null",
+                "src": "v \u003d -v",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    v \u003d -v;\n}",
+                "dst_parent": "null"
+              },
+              "line": 585,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang22"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return 1;",
+          "CHANGE_new:": "            v \u003d -v;",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Assignment",
+                "dst_type": "null",
+                "src": "v \u003d -v",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    v \u003d -v;\n}",
+                "dst_parent": "null"
+              },
+              "line": 585,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang22"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:loose_be",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return 1;",
+          "CHANGE_new:": "            v \u003d -v;",
+          "instance_detail": [
+            {
+              "pattern_action": "DEL",
+              "pattern_entity": {
+                "entity_type": "BinaryOperator",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "If",
+                  "entity_new value": "*",
+                  "entity_role": "*",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "BinaryOperator",
+                "dst_type": "null",
+                "src": "((java.lang.Math.abs(u)) \u003c\u003d 1) || ((java.lang.Math.abs(v)) \u003c\u003d 1)",
+                "dst": "null",
+                "src_parent_type": "If",
+                "dst_parent_type": "null",
+                "src_parent": "if (((java.lang.Math.abs(u)) \u003c\u003d 1) || ((java.lang.Math.abs(v)) \u003c\u003d 1)) {\n    return 1;\n}",
+                "dst_parent": "null"
+              },
+              "line": 584,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Lang24",
+      "repairability": [
+        {
+          "tool-name": "JKali",
+          "pattern-name": "JKali:add_rtrn",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "            }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Return",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return false",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    return false;\n}",
+                "dst_parent": "null"
+              },
+              "line": 1411,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang24"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "            }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (hasDecPoint || hasExp) {\n    return false;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (((chars[i]) \u003e\u003d \u00270\u0027) \u0026\u0026 ((chars[i]) \u003c\u003d \u00279\u0027)) {\n        return true;\n    }\n    if (((chars[i]) \u003d\u003d \u0027e\u0027) || ((chars[i]) \u003d\u003d \u0027E\u0027)) {\n        return false;\n    }\n    if ((chars[i]) \u003d\u003d \u0027.\u0027) {\n        if (hasDecPoint || hasExp) {\n            return false;\n        }\n        return foundDigit;\n    }\n    if ((!allowSigns) \u0026\u0026 (((((chars[i]) \u003d\u003d \u0027d\u0027) || ((chars[i]) \u003d\u003d \u0027D\u0027)) || ((chars[i]) \u003d\u003d \u0027f\u0027)) || ((chars[i]) \u003d\u003d \u0027F\u0027))) {\n        return foundDigit;\n    }\n    if (hasDecPoint || hasExp) {\n        return false;\n    }\n    if (((chars[i]) \u003d\u003d \u0027l\u0027) || ((chars[i]) \u003d\u003d \u0027L\u0027)) {\n        return foundDigit \u0026\u0026 (!hasExp);\n    }\n    return false;\n}",
+                "dst_parent": "null"
+              },
+              "line": 1410,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang24"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement3",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "            }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Return",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return false",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    return false;\n}",
+                "dst_parent": "null"
+              },
+              "line": 1411,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang24"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "            }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (hasDecPoint || hasExp) {\n    return false;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (((chars[i]) \u003e\u003d \u00270\u0027) \u0026\u0026 ((chars[i]) \u003c\u003d \u00279\u0027)) {\n        return true;\n    }\n    if (((chars[i]) \u003d\u003d \u0027e\u0027) || ((chars[i]) \u003d\u003d \u0027E\u0027)) {\n        return false;\n    }\n    if ((chars[i]) \u003d\u003d \u0027.\u0027) {\n        if (hasDecPoint || hasExp) {\n            return false;\n        }\n        return foundDigit;\n    }\n    if ((!allowSigns) \u0026\u0026 (((((chars[i]) \u003d\u003d \u0027d\u0027) || ((chars[i]) \u003d\u003d \u0027D\u0027)) || ((chars[i]) \u003d\u003d \u0027f\u0027)) || ((chars[i]) \u003d\u003d \u0027F\u0027))) {\n        return foundDigit;\n    }\n    if (hasDecPoint || hasExp) {\n        return false;\n    }\n    if (((chars[i]) \u003d\u003d \u0027l\u0027) || ((chars[i]) \u003d\u003d \u0027L\u0027)) {\n        return foundDigit \u0026\u0026 (!hasExp);\n    }\n    return false;\n}",
+                "dst_parent": "null"
+              },
+              "line": 1410,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang24"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:check_length",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "            }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if (hasDecPoint || hasExp) {\n    return false;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    if (((chars[i]) \u003e\u003d \u00270\u0027) \u0026\u0026 ((chars[i]) \u003c\u003d \u00279\u0027)) {\n        return true;\n    }\n    if (((chars[i]) \u003d\u003d \u0027e\u0027) || ((chars[i]) \u003d\u003d \u0027E\u0027)) {\n        return false;\n    }\n    if ((chars[i]) \u003d\u003d \u0027.\u0027) {\n        if (hasDecPoint || hasExp) {\n            return false;\n        }\n        return foundDigit;\n    }\n    if ((!allowSigns) \u0026\u0026 (((((chars[i]) \u003d\u003d \u0027d\u0027) || ((chars[i]) \u003d\u003d \u0027D\u0027)) || ((chars[i]) \u003d\u003d \u0027f\u0027)) || ((chars[i]) \u003d\u003d \u0027F\u0027))) {\n        return foundDigit;\n    }\n    if (hasDecPoint || hasExp) {\n        return false;\n    }\n    if (((chars[i]) \u003d\u003d \u0027l\u0027) || ((chars[i]) \u003d\u003d \u0027L\u0027)) {\n        return foundDigit \u0026\u0026 (!hasExp);\n    }\n    return false;\n}",
+                "dst_parent": "null"
+              },
+              "line": 1410,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Lang7",
+      "repairability": [
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return null;",
+          "CHANGE_new:": "            return org.apache.commons.lang3.math.NumberUtils.createBigDecimal(str);",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "org.apache.commons.lang3.math.NumberUtils.createBigDecimal(str)",
+                "dst": "null",
+                "src_parent_type": "Return",
+                "dst_parent_type": "null",
+                "src_parent": "return org.apache.commons.lang3.math.NumberUtils.createBigDecimal(str)",
+                "dst_parent": "null"
+              },
+              "line": 453,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang7"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement8",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return null;",
+          "CHANGE_new:": "            return org.apache.commons.lang3.math.NumberUtils.createBigDecimal(str);",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Invocation",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "org.apache.commons.lang3.math.NumberUtils.createBigDecimal(str)",
+                "dst": "null",
+                "src_parent_type": "Return",
+                "dst_parent_type": "null",
+                "src_parent": "return org.apache.commons.lang3.math.NumberUtils.createBigDecimal(str)",
+                "dst_parent": "null"
+              },
+              "line": 453,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang7"
+            },
+            {
+              "pattern_action": "DEL",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "Literal",
+                "dst_type": "null",
+                "src": "null",
+                "dst": "null",
+                "src_parent_type": "Return",
+                "dst_parent_type": "null",
+                "src_parent": "return null",
+                "dst_parent": "null"
+              },
+              "line": 453,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang7"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return null;",
+          "CHANGE_new:": "            return org.apache.commons.lang3.math.NumberUtils.createBigDecimal(str);",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "org.apache.commons.lang3.math.NumberUtils.createBigDecimal(str)",
+                "dst": "null",
+                "src_parent_type": "Return",
+                "dst_parent_type": "null",
+                "src_parent": "return org.apache.commons.lang3.math.NumberUtils.createBigDecimal(str)",
+                "dst_parent": "null"
+              },
+              "line": 453,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang7"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:Insert_Invocation",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            return null;",
+          "CHANGE_new:": "            return org.apache.commons.lang3.math.NumberUtils.createBigDecimal(str);",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Invocation",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "org.apache.commons.lang3.math.NumberUtils.createBigDecimal(str)",
+                "dst": "null",
+                "src_parent_type": "Return",
+                "dst_parent_type": "null",
+                "src_parent": "return org.apache.commons.lang3.math.NumberUtils.createBigDecimal(str)",
+                "dst_parent": "null"
+              },
+              "line": 453,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Lang7"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

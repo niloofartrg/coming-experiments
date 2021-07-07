@@ -1,0 +1,122 @@
+{
+  "instances": [
+    {
+      "revision": "Closure73",
+      "repairability": [
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_upd_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            if (c \u0026gt; 0x1f \u0026\u0026 c \u0026lt;\u003d 0x7f) {",
+          "CHANGE_new:": "            if(((c\u0026gt; 31)\u0026\u0026(c\u0026lt;127))\u0026\u0026(c\u0026lt;\u003d127)){",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "condition",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "BinaryOperator",
+                "dst_type": "null",
+                "src": "((c \u003e 31) \u0026\u0026 (c \u003c 127))",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "((c \u003e 31) \u0026\u0026 (c \u003c 127)) \u0026\u0026 (c \u003c\u003d 127)",
+                "dst_parent": "null"
+              },
+              "line": 1045,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure73"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            if (c \u0026gt; 0x1f \u0026\u0026 c \u0026lt;\u003d 0x7f) {",
+          "CHANGE_new:": "            if(((c\u0026gt; 31)\u0026\u0026(c\u0026lt;127))\u0026\u0026(c\u0026lt;\u003d127)){",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "BinaryOperator",
+                "dst_type": "null",
+                "src": "((c \u003e 31) \u0026\u0026 (c \u003c 127))",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "((c \u003e 31) \u0026\u0026 (c \u003c 127)) \u0026\u0026 (c \u003c\u003d 127)",
+                "dst_parent": "null"
+              },
+              "line": 1045,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure73"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "            if (c \u0026gt; 0x1f \u0026\u0026 c \u0026lt;\u003d 0x7f) {",
+          "CHANGE_new:": "            if(((c\u0026gt; 31)\u0026\u0026(c\u0026lt;127))\u0026\u0026(c\u0026lt;\u003d127)){",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "BinaryOperator",
+                "dst_type": "null",
+                "src": "((c \u003e 31) \u0026\u0026 (c \u003c 127))",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "((c \u003e 31) \u0026\u0026 (c \u003c 127)) \u0026\u0026 (c \u003c\u003d 127)",
+                "dst_parent": "null"
+              },
+              "line": 1045,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Closure73"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

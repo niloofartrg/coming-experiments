@@ -1,0 +1,81 @@
+{
+  "instances": [
+    {
+      "revision": "Chart24",
+      "repairability": [
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        v \u003d Math.min(v, this.upperBound);\r",
+          "CHANGE_new:": "        value \u003d Math.min(v, this.upperBound);",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "VariableWrite",
+                "dst_type": "VariableWrite",
+                "src": "v",
+                "dst": "value",
+                "src_parent_type": "Assignment",
+                "dst_parent_type": "Assignment",
+                "src_parent": "v \u003d java.lang.Math.min(v, this.upperBound)",
+                "dst_parent": "value \u003d java.lang.Math.min(v, this.upperBound)"
+              },
+              "line": 125,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart24"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        v \u003d Math.min(v, this.upperBound);\r",
+          "CHANGE_new:": "        value \u003d Math.min(v, this.upperBound);",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "VariableWrite",
+                "dst_type": "VariableWrite",
+                "src": "v",
+                "dst": "value",
+                "src_parent_type": "Assignment",
+                "dst_parent_type": "Assignment",
+                "src_parent": "v \u003d java.lang.Math.min(v, this.upperBound)",
+                "dst_parent": "value \u003d java.lang.Math.min(v, this.upperBound)"
+              },
+              "line": 125,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart24"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

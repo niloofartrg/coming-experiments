@@ -1,0 +1,139 @@
+{
+  "instances": [
+    {
+      "revision": "Chart9",
+      "repairability": [
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_upd_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        if (endIndex \u0026lt; 0) {\r",
+          "CHANGE_new:": "        if (endIndex \u0026lt; startIndex) {",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "condition",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "VariableRead",
+                "dst_type": "null",
+                "src": "startIndex",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "endIndex \u003c startIndex",
+                "dst_parent": "null"
+              },
+              "line": 944,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart9"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement9",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        if (endIndex \u0026lt; 0) {\r",
+          "CHANGE_new:": "        if (endIndex \u0026lt; startIndex) {",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "VariableRead",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "VariableRead",
+                "dst_type": "null",
+                "src": "startIndex",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "endIndex \u003c startIndex",
+                "dst_parent": "null"
+              },
+              "line": 944,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart9"
+            },
+            {
+              "pattern_action": "DEL",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "Literal",
+                "dst_type": "null",
+                "src": "0",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "endIndex \u003c 0",
+                "dst_parent": "null"
+              },
+              "line": 944,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart9"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        if (endIndex \u0026lt; 0) {\r",
+          "CHANGE_new:": "        if (endIndex \u0026lt; startIndex) {",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "VariableRead",
+                "dst_type": "null",
+                "src": "startIndex",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "endIndex \u003c startIndex",
+                "dst_parent": "null"
+              },
+              "line": 944,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart9"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

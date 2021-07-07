@@ -1,0 +1,535 @@
+{
+  "instances": [
+    {
+      "revision": "Math35",
+      "repairability": [
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "            }\r",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((elitismRate \u003c 0) || (elitismRate \u003e 1)) {\n    throw new org.apache.commons.math3.exception.OutOfRangeException(org.apache.commons.math3.exception.util.LocalizedFormats.ELITISM_RATE, elitismRate, 0, 1);\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    super(chromosomes, populationLimit);\n    if ((elitismRate \u003c 0) || (elitismRate \u003e 1)) {\n        throw new org.apache.commons.math3.exception.OutOfRangeException(org.apache.commons.math3.exception.util.LocalizedFormats.ELITISM_RATE, elitismRate, 0, 1);\n    }\n    this.elitismRate \u003d elitismRate;\n}",
+                "dst_parent": "null"
+              },
+              "line": 51,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math35"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "            }\r",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((elitismRate \u003c 0) || (elitismRate \u003e 1)) {\n    throw new org.apache.commons.math3.exception.OutOfRangeException(org.apache.commons.math3.exception.util.LocalizedFormats.ELITISM_RATE, elitismRate, 0, 1);\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    super(chromosomes, populationLimit);\n    if ((elitismRate \u003c 0) || (elitismRate \u003e 1)) {\n        throw new org.apache.commons.math3.exception.OutOfRangeException(org.apache.commons.math3.exception.util.LocalizedFormats.ELITISM_RATE, elitismRate, 0, 1);\n    }\n    this.elitismRate \u003d elitismRate;\n}",
+                "dst_parent": "null"
+              },
+              "line": 51,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math35"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:check_length",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "            }\r",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((elitismRate \u003c 0) || (elitismRate \u003e 1)) {\n    throw new org.apache.commons.math3.exception.OutOfRangeException(org.apache.commons.math3.exception.util.LocalizedFormats.ELITISM_RATE, elitismRate, 0, 1);\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    super(chromosomes, populationLimit);\n    if ((elitismRate \u003c 0) || (elitismRate \u003e 1)) {\n        throw new org.apache.commons.math3.exception.OutOfRangeException(org.apache.commons.math3.exception.util.LocalizedFormats.ELITISM_RATE, elitismRate, 0, 1);\n    }\n    this.elitismRate \u003d elitismRate;\n}",
+                "dst_parent": "null"
+              },
+              "line": 51,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math35"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Math50",
+      "repairability": [
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_upd_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "                    if (x \u003d\u003d x1) {",
+          "CHANGE_new:": "                    if (x \u003d\u003d x0) {\r",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "condition",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "VariableRead",
+                "dst_type": "VariableRead",
+                "src": "x1",
+                "dst": "x0",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "BinaryOperator",
+                "src_parent": "x \u003d\u003d x1",
+                "dst_parent": "x \u003d\u003d x0"
+              },
+              "line": 187,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math50"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "                    if (x \u003d\u003d x1) {",
+          "CHANGE_new:": "                    if (x \u003d\u003d x0) {\r",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "VariableRead",
+                "dst_type": "VariableRead",
+                "src": "x1",
+                "dst": "x0",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "BinaryOperator",
+                "src_parent": "x \u003d\u003d x1",
+                "dst_parent": "x \u003d\u003d x0"
+              },
+              "line": 187,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math50"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement5",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "                    if (x \u003d\u003d x1) {",
+          "CHANGE_new:": "                    if (x \u003d\u003d x0) {\r",
+          "instance_detail": [
+            {
+              "pattern_action": "UPD",
+              "pattern_entity": {
+                "entity_type": "VariableRead",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "VariableRead",
+                "dst_type": "VariableRead",
+                "src": "x1",
+                "dst": "x0",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "BinaryOperator",
+                "src_parent": "x \u003d\u003d x1",
+                "dst_parent": "x \u003d\u003d x0"
+              },
+              "line": 187,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math50"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "                    if (x \u003d\u003d x1) {",
+          "CHANGE_new:": "                    if (x \u003d\u003d x0) {\r",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "VariableRead",
+                "dst_type": "VariableRead",
+                "src": "x1",
+                "dst": "x0",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "BinaryOperator",
+                "src_parent": "x \u003d\u003d x1",
+                "dst_parent": "x \u003d\u003d x0"
+              },
+              "line": 187,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math50"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:update_return",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "                    if (x \u003d\u003d x1) {",
+          "CHANGE_new:": "                    if (x \u003d\u003d x0) {\r",
+          "instance_detail": [
+            {
+              "pattern_action": "UPD",
+              "pattern_entity": {
+                "entity_type": "VariableRead",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "VariableRead",
+                "dst_type": "VariableRead",
+                "src": "x1",
+                "dst": "x0",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "BinaryOperator",
+                "src_parent": "x \u003d\u003d x1",
+                "dst_parent": "x \u003d\u003d x0"
+              },
+              "line": 187,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math50"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Math63",
+      "repairability": [
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        return (Double.isNaN(x) \u0026\u0026 Double.isNaN(y)) || x \u003d\u003d y;",
+          "CHANGE_new:": "        return equals(x,y,1)||FastMath.abs(y-x)\u0026lt;\u003dSAFE_MIN;",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "Invocation",
+                "dst_type": "Invocation",
+                "src": "(java.lang.Double.isNaN(x))",
+                "dst": "(org.apache.commons.math.util.MathUtils.equals(x, y, 1))",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "BinaryOperator",
+                "src_parent": "((java.lang.Double.isNaN(x)) \u0026\u0026 (java.lang.Double.isNaN(y)))",
+                "dst_parent": "(org.apache.commons.math.util.MathUtils.equals(x, y, 1)) || ((org.apache.commons.math.util.FastMath.abs((y - x))) \u003c\u003d (org.apache.commons.math.util.MathUtils.SAFE_MIN))"
+              },
+              "line": 417,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math63"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement6",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        return (Double.isNaN(x) \u0026\u0026 Double.isNaN(y)) || x \u003d\u003d y;",
+          "CHANGE_new:": "        return equals(x,y,1)||FastMath.abs(y-x)\u0026lt;\u003dSAFE_MIN;",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "FieldRead",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "FieldRead",
+                "dst_type": "null",
+                "src": "(org.apache.commons.math.util.MathUtils.SAFE_MIN)",
+                "dst": "null",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "null",
+                "src_parent": "((org.apache.commons.math.util.FastMath.abs((y - x))) \u003c\u003d (org.apache.commons.math.util.MathUtils.SAFE_MIN))",
+                "dst_parent": "null"
+              },
+              "line": 417,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math63"
+            },
+            {
+              "pattern_action": "DEL",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "DEL",
+                "src_type": "VariableRead",
+                "dst_type": "null",
+                "src": "y",
+                "dst": "null",
+                "src_parent_type": "Invocation",
+                "dst_parent_type": "null",
+                "src_parent": "(java.lang.Double.isNaN(y))",
+                "dst_parent": "null"
+              },
+              "line": 417,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math63"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        return (Double.isNaN(x) \u0026\u0026 Double.isNaN(y)) || x \u003d\u003d y;",
+          "CHANGE_new:": "        return equals(x,y,1)||FastMath.abs(y-x)\u0026lt;\u003dSAFE_MIN;",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "Invocation",
+                "dst_type": "Invocation",
+                "src": "(java.lang.Double.isNaN(x))",
+                "dst": "(org.apache.commons.math.util.MathUtils.equals(x, y, 1))",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "BinaryOperator",
+                "src_parent": "((java.lang.Double.isNaN(x)) \u0026\u0026 (java.lang.Double.isNaN(y)))",
+                "dst_parent": "(org.apache.commons.math.util.MathUtils.equals(x, y, 1)) || ((org.apache.commons.math.util.FastMath.abs((y - x))) \u003c\u003d (org.apache.commons.math.util.MathUtils.SAFE_MIN))"
+              },
+              "line": 417,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math63"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:update_invocation",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        return (Double.isNaN(x) \u0026\u0026 Double.isNaN(y)) || x \u003d\u003d y;",
+          "CHANGE_new:": "        return equals(x,y,1)||FastMath.abs(y-x)\u0026lt;\u003dSAFE_MIN;",
+          "instance_detail": [
+            {
+              "pattern_action": "UPD",
+              "pattern_entity": {
+                "entity_type": "Invocation",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "UPD",
+                "src_type": "Invocation",
+                "dst_type": "Invocation",
+                "src": "(java.lang.Double.isNaN(x))",
+                "dst": "(org.apache.commons.math.util.MathUtils.equals(x, y, 1))",
+                "src_parent_type": "BinaryOperator",
+                "dst_parent_type": "BinaryOperator",
+                "src_parent": "((java.lang.Double.isNaN(x)) \u0026\u0026 (java.lang.Double.isNaN(y)))",
+                "dst_parent": "(org.apache.commons.math.util.MathUtils.equals(x, y, 1)) || ((org.apache.commons.math.util.FastMath.abs((y - x))) \u003c\u003d (org.apache.commons.math.util.MathUtils.SAFE_MIN))"
+              },
+              "line": 417,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math63"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Math71",
+      "repairability": [
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement1",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                stepSize\u003d0;\r",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Assignment",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Assignment",
+                "dst_type": "null",
+                "src": "stepSize \u003d 0",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    java.lang.System.arraycopy(y, 0, yTmp, 0, y0.length);\n    stepSize \u003d 0;\n    loop \u003d false;\n}",
+                "dst_parent": "null"
+              },
+              "line": 181,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math71"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                stepSize\u003d0;\r",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "java.lang.System.arraycopy(y, 0, yTmp, 0, y0.length)",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    java.lang.System.arraycopy(y, 0, yTmp, 0, y0.length);\n    stepSize \u003d 0;\n    loop \u003d false;\n}",
+                "dst_parent": "null"
+              },
+              "line": 180,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math71"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:Insert_Invocation",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                stepSize\u003d0;\r",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Invocation",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Invocation",
+                "dst_type": "null",
+                "src": "java.lang.System.arraycopy(y, 0, yTmp, 0, y0.length)",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    java.lang.System.arraycopy(y, 0, yTmp, 0, y0.length);\n    stepSize \u003d 0;\n    loop \u003d false;\n}",
+                "dst_parent": "null"
+              },
+              "line": 180,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Math71"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

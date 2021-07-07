@@ -1,0 +1,408 @@
+{
+  "instances": [
+    {
+      "revision": "Chart24",
+      "repairability": [
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement1",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "            }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Assignment",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Assignment",
+                "dst_type": "null",
+                "src": "value \u003d v",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    value \u003d v;\n}",
+                "dst_parent": "null"
+              },
+              "line": 127,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart24"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "            }",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((v \u003d\u003d value) \u003d\u003d false) {\n    value \u003d v;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    double v \u003d java.lang.Math.max(value, this.lowerBound);\n    v \u003d java.lang.Math.min(v, this.upperBound);\n    if ((v \u003d\u003d value) \u003d\u003d false) {\n        value \u003d v;\n    }\n    int g \u003d ((int) (((value - (this.lowerBound)) / ((this.upperBound) - (this.lowerBound))) * 255.0));\n    return new java.awt.Color(g, g, g);\n}",
+                "dst_parent": "null"
+              },
+              "line": 126,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart24"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:check_length",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "            }",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((v \u003d\u003d value) \u003d\u003d false) {\n    value \u003d v;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    double v \u003d java.lang.Math.max(value, this.lowerBound);\n    v \u003d java.lang.Math.min(v, this.upperBound);\n    if ((v \u003d\u003d value) \u003d\u003d false) {\n        value \u003d v;\n    }\n    int g \u003d ((int) (((value - (this.lowerBound)) / ((this.upperBound) - (this.lowerBound))) * 255.0));\n    return new java.awt.Color(g, g, g);\n}",
+                "dst_parent": "null"
+              },
+              "line": 126,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Chart26",
+      "repairability": [
+        {
+          "tool-name": "JKali",
+          "pattern-name": "JKali:add_rtrn",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                }\r",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Return",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return state",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    return state;\n}",
+                "dst_parent": "null"
+              },
+              "line": 1193,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart26"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                }\r",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return state",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    return state;\n}",
+                "dst_parent": "null"
+              },
+              "line": 1193,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart26"
+            }
+          ]
+        },
+        {
+          "tool-name": "NPEfix",
+          "pattern-name": "NPEfix:replacement3",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                }\r",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "Return",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "Return",
+                "dst_type": "null",
+                "src": "return state",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    return state;\n}",
+                "dst_parent": "null"
+              },
+              "line": 1193,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart26"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_shallow",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                }\r",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "Statement",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((null \u003d\u003d owner) \u003d\u003d true) {\n    return state;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    org.jfree.chart.ChartRenderingInfo owner \u003d plotState.getOwner();\n    if ((null \u003d\u003d owner) \u003d\u003d true) {\n        return state;\n    }\n    org.jfree.chart.entity.EntityCollection entities \u003d owner.getEntityCollection();\n    if (entities !\u003d null) {\n        entities.add(new org.jfree.chart.entity.AxisLabelEntity(this, hotspot, this.labelToolTip, this.labelURL));\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 1192,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart26"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:check_length",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "INSERT:": "                }\r",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "If",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": "null"
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "If",
+                "dst_type": "null",
+                "src": "if ((null \u003d\u003d owner) \u003d\u003d true) {\n    return state;\n}",
+                "dst": "null",
+                "src_parent_type": "Block",
+                "dst_parent_type": "null",
+                "src_parent": "{\n    org.jfree.chart.ChartRenderingInfo owner \u003d plotState.getOwner();\n    if ((null \u003d\u003d owner) \u003d\u003d true) {\n        return state;\n    }\n    org.jfree.chart.entity.EntityCollection entities \u003d owner.getEntityCollection();\n    if (entities !\u003d null) {\n        entities.add(new org.jfree.chart.entity.AxisLabelEntity(this, hotspot, this.labelToolTip, this.labelURL));\n    }\n}",
+                "dst_parent": "null"
+              },
+              "line": 1192,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Chart9",
+      "repairability": [
+        {
+          "tool-name": "Nopol",
+          "pattern-name": "Nopol:if_condition_upd_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        if (endIndex \u0026lt; 0) {\r",
+          "CHANGE_new:": "        if (endIndex \u0026lt; 0 || (endIndex + 1 \u0026gt;\u003d startIndex + 1) \u003d\u003d false) {",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "condition",
+                  "entity_parent": {
+                    "entity_type": "If",
+                    "entity_new value": "*",
+                    "entity_role": "*",
+                    "entity_parent": "null"
+                  }
+                }
+              },
+              "concrete_change": {
+                "operator": "MOV",
+                "src_type": "BinaryOperator",
+                "dst_type": "BinaryOperator",
+                "src": "endIndex \u003c 0",
+                "dst": "(endIndex \u003c 0)",
+                "src_parent_type": "If",
+                "dst_parent_type": "BinaryOperator",
+                "src_parent": "if (endIndex \u003c 0) {\n    emptyRange \u003d true;\n}",
+                "dst_parent": "(endIndex \u003c 0) || (((endIndex + 1) \u003e\u003d (startIndex + 1)) \u003d\u003d false)"
+              },
+              "line": 944,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart9"
+            }
+          ]
+        },
+        {
+          "tool-name": "JGenProg",
+          "pattern-name": "JGenProg:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        if (endIndex \u0026lt; 0) {\r",
+          "CHANGE_new:": "        if (endIndex \u0026lt; 0 || (endIndex + 1 \u0026gt;\u003d startIndex + 1) \u003d\u003d false) {",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "BinaryOperator",
+                "dst_type": "null",
+                "src": "(endIndex \u003c 0) || (((endIndex + 1) \u003e\u003d (startIndex + 1)) \u003d\u003d false)",
+                "dst": "null",
+                "src_parent_type": "If",
+                "dst_parent_type": "null",
+                "src_parent": "if ((endIndex \u003c 0) || (((endIndex + 1) \u003e\u003d (startIndex + 1)) \u003d\u003d false)) {\n    emptyRange \u003d true;\n}",
+                "dst_parent": "null"
+              },
+              "line": 944,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart9"
+            }
+          ]
+        },
+        {
+          "tool-name": "Arja",
+          "pattern-name": "Arja:any_statement_deep",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        if (endIndex \u0026lt; 0) {\r",
+          "CHANGE_new:": "        if (endIndex \u0026lt; 0 || (endIndex + 1 \u0026gt;\u003d startIndex + 1) \u003d\u003d false) {",
+          "instance_detail": [
+            {
+              "pattern_action": "ANY",
+              "pattern_entity": {
+                "entity_type": "*",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "*",
+                  "entity_new value": "*",
+                  "entity_role": "Statement",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "BinaryOperator",
+                "dst_type": "null",
+                "src": "(endIndex \u003c 0) || (((endIndex + 1) \u003e\u003d (startIndex + 1)) \u003d\u003d false)",
+                "dst": "null",
+                "src_parent_type": "If",
+                "dst_parent_type": "null",
+                "src_parent": "if ((endIndex \u003c 0) || (((endIndex + 1) \u003e\u003d (startIndex + 1)) \u003d\u003d false)) {\n    emptyRange \u003d true;\n}",
+                "dst_parent": "null"
+              },
+              "line": 944,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart9"
+            }
+          ]
+        },
+        {
+          "tool-name": "Elixir",
+          "pattern-name": "Elixir:tight_be",
+          "Unified_Diff_of-files:": "Starts Below...",
+          "CHANGE_old:": "        if (endIndex \u0026lt; 0) {\r",
+          "CHANGE_new:": "        if (endIndex \u0026lt; 0 || (endIndex + 1 \u0026gt;\u003d startIndex + 1) \u003d\u003d false) {",
+          "instance_detail": [
+            {
+              "pattern_action": "INS",
+              "pattern_entity": {
+                "entity_type": "BinaryOperator",
+                "entity_new value": "*",
+                "entity_role": "*",
+                "entity_parent": {
+                  "entity_type": "If",
+                  "entity_new value": "*",
+                  "entity_role": "*",
+                  "entity_parent": "null"
+                }
+              },
+              "concrete_change": {
+                "operator": "INS",
+                "src_type": "BinaryOperator",
+                "dst_type": "null",
+                "src": "(endIndex \u003c 0) || (((endIndex + 1) \u003e\u003d (startIndex + 1)) \u003d\u003d false)",
+                "dst": "null",
+                "src_parent_type": "If",
+                "dst_parent_type": "null",
+                "src_parent": "if ((endIndex \u003c 0) || (((endIndex + 1) \u003e\u003d (startIndex + 1)) \u003d\u003d false)) {\n    emptyRange \u003d true;\n}",
+                "dst_parent": "null"
+              },
+              "line": 944,
+              "file": "/Users/macbook/Documents/university/internship/coming/coming/Chart9"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
